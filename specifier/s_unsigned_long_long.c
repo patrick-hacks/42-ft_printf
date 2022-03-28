@@ -1,23 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifiers_decimal.c                               :+:      :+:    :+:   */
+/*   s_unsigned_long_long.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 17:29:16 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:36:10 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 04:56:24 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 05:36:01 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "specifiers.h"
+#include "specifier_functions.h"
+
+#include <stdarg.h>
 
 #include "libft.h"
-#include "ft_itoaull.h"
-
-#include <stdio.h>
-#include <unistd.h>
-#include <stdarg.h>
+#include "ft_vector.h"
+#include "subspecifier.h"
 
 static char	get_sign(t_subspecifiers *data, int sign)
 {
@@ -90,29 +89,4 @@ void	unsigned_long_long(t_vector *buffer, t_subspecifiers *data,
 
 	val = va_arg(args, unsigned long long);
 	add_number(buffer, data, val, 0);
-}
-
-void	signed_integer(t_vector *buffer, t_subspecifiers *data,
-	va_list args)
-{
-	int		val;
-	int		sign;
-
-	val = va_arg(args, int);
-	sign = 0;
-	if (val < 0)
-	{
-		sign = 1;
-		val *= -1;
-	}
-	add_number(buffer, data, (unsigned long long)val, sign);
-}
-
-void	unsigned_integer(t_vector *buffer, t_subspecifiers *data,
-	va_list args)
-{
-	unsigned int	val;
-
-	val = va_arg(args, unsigned int);
-	add_number(buffer, data, (unsigned long long)val, 0);
 }

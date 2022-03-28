@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   width.c                                            :+:      :+:    :+:   */
+/*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:07:22 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 04:35:13 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 04:41:04 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "subspecifiers.h"
-
-#include <stdarg.h>
+#include "subspecifier.h"
 
 #include "libft.h"
 
-int	process_width(const char *format, va_list args, t_subspecifiers *data)
+void	init_t_subspecifiers(t_subspecifiers *data)
 {
 	int	i;
 
-	if (*format == '*')
-	{
-		data->width = va_arg(args, int);
-		return(1);
-	}
-	data->width = ft_atoi(format);
+	data->precision = 0;
+	data->width = 0;
 	i = 0;
-	while (ft_isdigit(format[i]))
+	while (i < (int)sizeof(data->flags))
+	{
+		(data->flags)[i] = 0;
 		i++;
-	return (i);
+	}
+	i = 0;
+	while (i < (int)sizeof(data->length))
+	{
+		(data->length)[i] = 0;
+		i++;
+	}
 }

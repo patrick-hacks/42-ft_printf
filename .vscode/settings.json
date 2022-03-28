@@ -23,6 +23,7 @@
 		"ios": "c",
 		"specifiers.h": "c",
 		"libft.h": "c",
-		"stdarg.h": "c"
+		"stdarg.h": "c",
+		"specifier.h": "c"
 	}
 }

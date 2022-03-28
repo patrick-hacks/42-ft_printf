@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifiers.h                                       :+:      :+:    :+:   */
+/*   specifier.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 00:23:22 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:28:31 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 03:33:03 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 04:44:50 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SPECIFIERS_H
-#define SPECIFIERS_H
+#include "specifier.h"
 
 #include <stdarg.h>
+#include <stdint.h>
 
 #include "ft_vector.h"
-#include "subspecifiers.h"
+#include "subspecifier.h"
+#include "specifier_functions.h"
 
-#define SPEC_F_ARGS t_vector *buffer, t_subspecifiers *data, va_list args
+int	call_specifier_function(char spec, t_vector *buffer,
+	t_subspecifiers *data, va_list args)
+{
+	int8_t function_id;
 
-typedef void (*t_specifier_function)(SPEC_F_ARGS);
-
-void	signed_integer(SPEC_F_ARGS);
-void	unsigned_integer(SPEC_F_ARGS);
-void	unsigned_long_long(SPEC_F_ARGS);
-void	error(SPEC_F_ARGS);
-
-#endif // SPECIFIERS_H
+	if (spec < 64)
+		return (s_error(buffer, data, args));
+	function_id = spec_function_id[spec - 64];
+	return (specifier_functions[function_id](buffer, data, args));
+}

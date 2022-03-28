@@ -1,36 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   precision.c                                        :+:      :+:    :+:   */
+/*   length.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:09:55 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 00:26:04 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 04:36:46 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "subspecifiers.h"
+#include "subspecifier.h"
 
-#include <stdarg.h>
+#include <stdint.h>
 
 #include "libft.h"
 
-int	process_precision(const char *format, va_list args, t_subspecifiers *data)
+// returns 0 if c is a flag else 1
+static int	set_length(unsigned char c, t_subspecifiers *data)
 {
 	int	i;
 
-	if (*format != '.')
-		return (0);
-	i = 1;
-	if (format[i] == '*')
-	{
-		data->width = va_arg(args, int);
-		return(1);
-	}
-	data->width = ft_atoi(format);
 	i = 0;
-	while (ft_isdigit(format[i]))
+	while (i < (int)sizeof(LENGTH_CHARS))
+	{
+		if (c == LENGTH_CHARS[i])
+		{
+			(data->length)[i]++;
+			return (0);
+		}
+		i++;
+	}
+	return (1);
+}
+
+int	process_length(const char *format, t_subspecifiers *data)
+{
+	int	i;
+
+	i = 0;
+	while (set_length(format[i], data) == 0)
 		i++;
 	return (i);
 }

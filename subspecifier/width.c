@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifiers_error.c                                 :+:      :+:    :+:   */
+/*   width.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:36:37 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 04:31:49 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "specifiers.h"
+#include "subspecifier.h"
 
 #include <stdarg.h>
 
-void	error(t_vector *buffer, t_subspecifiers *data, va_list args)
+#include "libft.h"
+
+int	process_width(const char *format, va_list args, t_subspecifiers *data)
 {
-	ft_vector_push_back(buffer, "error", 5);
-	(void) data;
-	(void) args;
+	int	i;
+
+	if (*format == '*')
+	{
+		data->width = va_arg(args, int);
+		return(1);
+	}
+	data->width = ft_atoi(format);
+	i = 0;
+	while (ft_isdigit(format[i]))
+		i++;
+	return (i);
 }

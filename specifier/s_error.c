@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   s_error.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 04:54:34 by pfuchs           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "specifier_functions.h"
+
+#include <stdarg.h>
+
+#include "libft.h"
+#include "ft_vector.h"
+#include "subspecifier.h"
+
+int	s_error(t_vector *buffer, t_subspecifiers *data, va_list args)
+{
+	//ft_vector_push_back(buffer, "error:", 5);
+	(void) buffer;
+	(void) data;
+	(void) args;
+	return (1);
+}

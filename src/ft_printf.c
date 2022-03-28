@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 01:30:06 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 04:53:35 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,42 +15,30 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-#include "subspecifiers.h"
-#include "specifiers.h"
+#include "subspecifier.h"
+#include "specifier.h"
 #include "libft.h"
 #include "ft_vector.h"
 
 #include <stdio.h>
 
-const static t_specifier_function	functions[] = {
-	signed_integer, signed_integer,
-	unsigned_integer,
-	error, // o uoctal
-	error, // x uhexa
-	error, // X uhexa UP
-	error, // f float low
-	error, // e scient low
-	error, // E scient up
-	error, // g short low
-	error, // G short up
-	error, // c char
-	error, // s string
-	error, // p pointer
-	error, // n store
-	error // error
-};
 
 static int	process_format(t_vector *buffer, const char *format, va_list args)
 {
 	t_subspecifiers	data;
+	const char		*it;
 
-	format += process_flags(format, &data);
-	format += process_width(format, args, &data);
-	format += process_precision(format, args, &data);
-	format += process_length(format, &data);
-
-	functions[0](buffer, &data, args);
-	return (0);
+	it = format;
+	it += process_flags(it, &data);
+	it += process_width(it, args, &data);
+	it += process_precision(it, args, &data);
+	it += process_length(it, &data);
+	if (call_specifier_function(*it, buffer, &data, args))
+	{
+		// handle error
+		return (1);
+	}
+	return ((int)(it - format));
 }
 
 int	ft_vprintf(const char *format, va_list args)
@@ -74,7 +62,7 @@ int	ft_vprintf(const char *format, va_list args)
 		}
 		else
 		{
-			process_format(&buffer, it, args);
+			it += process_format(&buffer, it, args);
 		}
 	}
 	if (write(1, buffer.data, buffer.size) != buffer.size)
