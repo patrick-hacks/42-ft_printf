@@ -6,7 +6,7 @@
 #    By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/26 13:56:06 by pfuchs            #+#    #+#              #
-#    Updated: 2022/03/27 05:04:32 by pfuchs           ###   ########.fr        #
+#    Updated: 2022/03/28 01:34:25 by pfuchs           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,18 +14,18 @@
 MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 
-VPATH = src include vector
+VPATH = src specifier_functions subspecifiers
 
 # Compiler Variables
 CC		= cc
 CFLAGSS	= -Wall -Wextra -Werror -g
-INCFLAG	= -I include -I libft
+INCFLAG	= -I include -I libft -I specifier_functions -I subspecifiers
 AR		= ar
 ARFLAGS = -rcs
 # File Variables
 NAME	= libft_printf.a
-SRC		= ft_itoaull.c ft_printf.c ft_vector.c prespecifiers.c specifiers_decimal.c specifiers_error.c
-OBJ		= $(addprefix _bin/,$(SRC:.c=.o))
+SRC		= $(wildcard src/*.c) $(wildcard specifier_functions/*.c) $(wildcard subspecifiers/*.c)
+OBJ		= $(addprefix _bin/,$(notdir $(SRC:.c=.o)))
 
 $(NAME): $(OBJ) | libft/libft.a
 	cp libft/libft.a $@

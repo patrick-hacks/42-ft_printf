@@ -6,11 +6,11 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 17:29:16 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 04:27:09 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 01:36:10 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "specifiers_decimal.h"
+#include "specifiers.h"
 
 #include "libft.h"
 #include "ft_itoaull.h"
@@ -19,18 +19,18 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-static char	get_sign(t_format_data *data, int sign)
+static char	get_sign(t_subspecifiers *data, int sign)
 {
 	if (sign)
 		return '-';
-	if (data->flag_bits & FLAG_PLUS)
+	if (data->flags[0] & 0)
 		return '+';
-	if (data->flag_bits & FLAG_SPACE)
+	if (data->flags[0] & 0)
 		return ' ';
 	return '\0';
 }
 
-static void	add_precision(t_vector *buffer, t_format_data *data, int nbr_length)
+static void	add_precision(t_vector *buffer, t_subspecifiers *data, int nbr_length)
 {
 	int	padding;
 
@@ -38,55 +38,52 @@ static void	add_precision(t_vector *buffer, t_format_data *data, int nbr_length)
 		return ;
 	padding = data->precision - nbr_length;
 	if (padding > 0)
-	{
-		if (data->flag_bits == FLAG_ZERO)
-		{
-			ft_vector_pad_back(buffer, '0', padding);
-		}
-	}
+		ft_vector_pad_back(buffer, '0', padding);
 }
 
-static void	add_width(t_vector *buffer, t_format_data *data, int nbr_length)
+static void	add_width(t_vector *buffer, t_subspecifiers *data, int nbr_length)
 {
 	char	padding;
 
 	if (data->width - nbr_length <= 0)
 		return ;
 	padding = ' ';
-	if (data->flag_bits & FLAG_ZERO)
+	if (data->flags[0] & 0)
 		padding = '0';
 	ft_vector_pad_back(buffer, padding, data->width - nbr_length);
 }
 
-void	add_number(t_vector *buffer, t_format_data *data,
+void	add_number(t_vector *buffer, t_subspecifiers *data,
 	unsigned long long n, int sign)
 {
 	char	*nbr_str;
 	int		nbr_length;
-	int		nbr_length_with_sign;
+	int		full_length;
 	char	char_sign;
 
 	nbr_str = ft_itoaull(n);
 	char_sign = get_sign(data, sign);
 	nbr_length = ft_strlen(nbr_str);
-	if (data->precision > nbr_length)
-		nbr_length = data->precision;
-	nbr_length_with_sign = nbr_length;
-	if (sign)
-		nbr_length_with_sign++;
-	if (!(data->flag_bits & FLAG_MINUS))
-		add_width(buffer, data, nbr_length_with_sign);
+	full_length = nbr_length;
+	if (data->precision > full_length)
+		full_length = data->precision;
 	if (char_sign)
+		full_length++;
+	if (char_sign && (data->flags[0] & 0))
+		ft_vector_push_back(buffer, &char_sign, 1);
+	if (!(data->flags[0] & 0))
+		add_width(buffer, data, full_length);
+	if (char_sign && !(data->flags[0] & 0))
 		ft_vector_push_back(buffer, &char_sign, 1);
 	if (data->precision != -1)
 		add_precision(buffer, data, nbr_length);
 	if (data->precision != 0 || n != 0)
-		ft_vector_push_back(buffer, nbr_str, ft_strlen(nbr_str));
-	if (data->flag_bits & FLAG_MINUS)
-		add_width(buffer, data, nbr_length_with_sign);
+		ft_vector_push_back(buffer, nbr_str, nbr_length);
+	if (data->flags[0] & 0)
+		add_width(buffer, data, full_length);
 }
 
-void	unsigned_long_long(t_vector *buffer, t_format_data *data,
+void	unsigned_long_long(t_vector *buffer, t_subspecifiers *data,
 	va_list args)
 {
 	unsigned long long	val;
@@ -95,7 +92,7 @@ void	unsigned_long_long(t_vector *buffer, t_format_data *data,
 	add_number(buffer, data, val, 0);
 }
 
-void	signed_integer(t_vector *buffer, t_format_data *data,
+void	signed_integer(t_vector *buffer, t_subspecifiers *data,
 	va_list args)
 {
 	int		val;
@@ -111,7 +108,7 @@ void	signed_integer(t_vector *buffer, t_format_data *data,
 	add_number(buffer, data, (unsigned long long)val, sign);
 }
 
-void	unsigned_integer(t_vector *buffer, t_format_data *data,
+void	unsigned_integer(t_vector *buffer, t_subspecifiers *data,
 	va_list args)
 {
 	unsigned int	val;

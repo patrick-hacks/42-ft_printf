@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 04:12:49 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 01:30:06 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+#include "subspecifiers.h"
+#include "specifiers.h"
 #include "libft.h"
 #include "ft_vector.h"
-#include "prespecifiers.h"
-#include "specifiers.h"
 
 #include <stdio.h>
 
@@ -40,46 +40,16 @@ const static t_specifier_function	functions[] = {
 	error // error
 };
 
-static int	process_format(t_vector *buffer, const char **format, va_list args)
+static int	process_format(t_vector *buffer, const char *format, va_list args)
 {
-	t_format_data				data;
-	const char					*it;
-	it = *format + 1;
-	// printf("format %%: %s\n", it);
-	// fflush(stdout);
-	if (*it == '%')
-	{
-		if (ft_vector_push_back(buffer, it, 1))
-		{
-			ft_vector_free(buffer);
-			return (-1);
-		}
-		*format = it + 1;
-		return (0);
-	}
-	// printf("format bits : %s\n", it);
-	// fflush(stdout);
-	data.flag_bits = process_flags(&it);
-	// printf("format width: %s\n", it);
-	// fflush(stdout);
-	data.width = process_star_number(&it, args);
-	// printf("format preci: %s\n", it);
-	// fflush(stdout);
-	//write(1, "width complete", 14);
-	if (*it == '.')
-	{
-		it++;
-		data.precision = process_star_number(&it, args);
-	}
-	// printf("format id: %s\n", it);
-	// fflush(stdout);
-	data.specifier_id = process_specifier(&it);
-	// printf("format end: %s\n", it);
-	// fflush(stdout);
-	if (data.specifier_id == -1)
-		return (1);
-	*format = it;
-	functions[data.specifier_id](buffer, &data, args);
+	t_subspecifiers	data;
+
+	format += process_flags(format, &data);
+	format += process_width(format, args, &data);
+	format += process_precision(format, args, &data);
+	format += process_length(format, &data);
+
+	functions[0](buffer, &data, args);
 	return (0);
 }
 
@@ -104,7 +74,7 @@ int	ft_vprintf(const char *format, va_list args)
 		}
 		else
 		{
-			process_format(&buffer, &it, args);
+			process_format(&buffer, it, args);
 		}
 	}
 	if (write(1, buffer.data, buffer.size) != buffer.size)

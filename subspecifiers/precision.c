@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   prespecifiers.h                                    :+:      :+:    :+:   */
+/*   precision.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/26 19:00:16 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/26 19:14:37 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 01:09:55 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRESPECIFIERS_H
-# define PRESPECIFIERS_H
+#include "subspecifiers.h"
 
-# include <stdarg.h>
+#include <stdarg.h>
 
-int		process_flags(const char **format);
-int		process_star_number(const char **num, va_list args);
-int		process_specifier(const char **num);
+#include "libft.h"
 
-#endif // PRESPECIFIERS_H
+int	process_precision(const char *format, va_list args, t_subspecifiers *data)
+{
+	int	i;
+
+	if (*format != '.')
+		return (0);
+	i = 1;
+	if (format[i] == '*')
+	{
+		data->width = va_arg(args, int);
+		return(1);
+	}
+	data->width = ft_atoi(format);
+	i = 0;
+	while (ft_isdigit(format[i]))
+		i++;
+	return (i);
+}

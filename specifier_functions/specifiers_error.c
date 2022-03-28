@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   specifiers.h                                       :+:      :+:    :+:   */
+/*   specifiers_error.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 03:32:31 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 04:24:11 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 01:36:37 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SPECIFIERS_H
-# define SPECIFIERS_H
+#include "specifiers.h"
 
-# include <stdarg.h>
+#include <stdarg.h>
 
-# include "ft_vector.h"
-# include "format_data.h"
-
-# include "specifiers_decimal.h"
-# include "specifiers_error.h"
-
-typedef void (*t_specifier_function)(t_vector *buffer, t_format_data *data, va_list args);
-
-#endif // SPECIFIERS_H
+void	error(t_vector *buffer, t_subspecifiers *data, va_list args)
+{
+	ft_vector_push_back(buffer, "error", 5);
+	(void) data;
+	(void) args;
+}

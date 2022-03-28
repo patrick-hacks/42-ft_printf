@@ -19,6 +19,10 @@
 		"__locale": "c",
 		"__string": "c",
 		"specifiers_error.h": "c",
-		"ft_vector.h": "c"
+		"ft_vector.h": "c",
+		"ios": "c",
+		"specifiers.h": "c",
+		"libft.h": "c",
+		"stdarg.h": "c"
 	}
 }
