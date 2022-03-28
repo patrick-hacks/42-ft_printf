@@ -6,11 +6,15 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 05:18:56 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 05:31:37 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 06:57:49 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	recursive_base(unsigned long long number, int base_size,
+#include "specifier_helper.h"
+
+#include "libft.h"
+
+static int	recursive_base(unsigned long long number, int base_size,
 	char *c, char *output)
 {
 	int	offset;
@@ -26,9 +30,10 @@ int	recursive_base(unsigned long long number, int base_size,
 
 int	sbase(unsigned long long nbr, char *base, char *output)
 {
-	int		base_size;
-
 	if (nbr == 0)
+	{
 		output[0] = base[0];
-	return(recursive_base(nbr, base_size, base, output));
+		return (1);
+	}
+	return(recursive_base(nbr, ft_strlen(base), base, output));
 }

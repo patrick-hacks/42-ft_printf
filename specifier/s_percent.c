@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   init.c                                             :+:      :+:    :+:   */
+/*   s_percent.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 04:35:13 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:21:14 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 06:58:38 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/28 06:59:53 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "specifier_functions.h"
+
+#include <stdarg.h>
+
+#include "ft_vector.h"
 #include "subspecifier.h"
 
-#include "libft.h"
-
-void	init_t_subspecifiers(t_subspecifiers *data)
+int	s_percent(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	int	i;
-
-	data->precision = -1;
-	data->width = -1;
-	i = 0;
-	while (i < (int)sizeof(data->flags))
-	{
-		(data->flags)[i] = 0;
-		i++;
-	}
-	i = 0;
-	while (i < (int)sizeof(data->length))
-	{
-		(data->length)[i] = 0;
-		i++;
-	}
+	ft_vector_push_back(buffer, "%", 1);
+	(void) data;
+	(void) args;
+	return (0);
 }

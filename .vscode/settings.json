@@ -24,6 +24,7 @@
 		"specifiers.h": "c",
 		"libft.h": "c",
 		"stdarg.h": "c",
-		"specifier.h": "c"
+		"specifier.h": "c",
+		"subspecifier.h": "c"
 	}
 }

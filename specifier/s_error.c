@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 04:54:34 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 06:59:01 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 #include <stdarg.h>
 
-#include "libft.h"
 #include "ft_vector.h"
 #include "subspecifier.h"
 

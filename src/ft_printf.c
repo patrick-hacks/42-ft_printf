@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 04:53:35 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 06:50:36 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static int	process_format(t_vector *buffer, const char *format, va_list args)
 	const char		*it;
 
 	it = format;
+	init_t_subspecifiers(&data);
 	it += process_flags(it, &data);
 	it += process_width(it, args, &data);
 	it += process_precision(it, args, &data);
@@ -38,7 +39,7 @@ static int	process_format(t_vector *buffer, const char *format, va_list args)
 		// handle error
 		return (1);
 	}
-	return ((int)(it - format));
+	return ((int)(it + 1 - format));
 }
 
 int	ft_vprintf(const char *format, va_list args)
@@ -62,7 +63,7 @@ int	ft_vprintf(const char *format, va_list args)
 		}
 		else
 		{
-			it += process_format(&buffer, it, args);
+			it += process_format(&buffer, it + 1, args) + 1;
 		}
 	}
 	if (write(1, buffer.data, buffer.size) != buffer.size)

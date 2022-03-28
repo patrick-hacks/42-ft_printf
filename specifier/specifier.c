@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 03:33:03 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 04:44:50 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 07:03:39 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,11 @@ int	call_specifier_function(char spec, t_vector *buffer,
 	int8_t function_id;
 
 	if (spec < 64)
+	{
+		if (spec == '%')
+			return (s_percent(buffer, data, args));
 		return (s_error(buffer, data, args));
+	}
 	function_id = spec_function_id[spec - 64];
 	return (specifier_functions[function_id](buffer, data, args));
 }

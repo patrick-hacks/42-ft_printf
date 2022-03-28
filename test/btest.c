@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 23:16:43 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 06:30:36 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/28 06:16:08 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,40 +39,40 @@ void	test_d(int n)
 {
 	test("%d", n);
 
-	test("%-d", n);
-	test("%+d", n);
-	test("% d", n);
-	test("%#d", n);
-	test("%0d", n);
+	// test("%-d", n);
+	// test("%+d", n);
+	// test("% d", n);
+	// test("%#d", n);
+	// test("%0d", n);
 
-	test("%-5d", n);
-	test("%+10d", n);
-	test("% 20d", n);
-	test("%#30d", n);
-	test("%040d", n);
+	// test("%-5d", n);
+	// test("%+10d", n);
+	// test("% 20d", n);
+	// test("%#30d", n);
+	// test("%040d", n);
 
-	test("%-.5d", n);
-	test("%+.10d", n);
-	test("% .20d", n);
-	test("%#.30d", n);
-	test("%0.40d", n);
+	// test("%-.5d", n);
+	// test("%+.10d", n);
+	// test("% .20d", n);
+	// test("%#.30d", n);
+	// test("%0.40d", n);
 
-	test("%-5.5d", n);
-	test("%+5.10d", n);
-	test("% 5.20d", n);
-	test("%#5.30d", n);
-	test("%05.40d", n);
+	// test("%-5.5d", n);
+	// test("%+5.10d", n);
+	// test("% 5.20d", n);
+	// test("%#5.30d", n);
+	// test("%05.40d", n);
 
-	test("%-40.5d", n);
-	test("%+40.10d", n);
-	test("% 40.20d", n);
-	test("%#40.30d", n);
-	test("%040.35d", n);
+	// test("%-40.5d", n);
+	// test("%+40.10d", n);
+	// test("% 40.20d", n);
+	// test("%#40.30d", n);
+	// test("%040.35d", n);
 
-	test("%-+d", n);
-	test("%-+ d", n);
-	test("%-+ 0d", n);
-	test("%-+#0d", n);
+	// test("%-+d", n);
+	// test("%-+ d", n);
+	// test("%-+ 0d", n);
+	// test("%-+#0d", n);
 }
 
 int	main()
