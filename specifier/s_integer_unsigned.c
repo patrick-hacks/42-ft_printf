@@ -1,36 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   precision.c                                        :+:      :+:    :+:   */
+/*   s_integer_unsigned.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 09:43:05 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/28 04:56:02 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/29 11:02:43 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "subspecifier.h"
+#include "specifier_functions.h"
 
 #include <stdarg.h>
 
-#include "libft.h"
+#include "ft_vector.h"
+#include "subspecifier.h"
+#include "specifier_helper.h"
 
-int	process_precision(const char *format, va_list args, t_subspecifiers *data)
+int	s_integer_unsigned(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	int	i;
+	int		val;
+	int		sign;
 
-	if (*format != '.')
-		return (0);
-	format++;
-	if (*format == '*')
+	val = va_arg(args, int);
+	sign = 0;
+	if (val < 0)
 	{
-		data->precision = va_arg(args, int);
-		return(2);
+		val *= -1;
+		sign = 1;
 	}
-	data->precision = ft_atoi(format);
-	i = 0;
-	while (ft_isdigit(format[i]))
-		i++;
-	return (i + 1);
+	return (s_long_long(buffer, data, (unsigned long long)val, sign));
 }

@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 22:10:05 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:39:13 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/29 09:06:42 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	set_flag(char flag, t_subspecifiers *data)
 	{
 		if (flag == FLAG_CHARS[i])
 		{
-			(data->flags)[i]++;
+			(data->flags)[(int)flag]++;
 			return (0);
 		}
 		i++;

@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 23:44:12 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:42:38 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/29 09:22:12 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdarg.h>
 
 # define LENGTH_CHARS "hljztL"
-# define FLAG_CHARS " !\"#$&'()+,-/0123456789:;<=>?@[\\]^_`{|}~"
+# define FLAG_CHARS " !\"#$&'()+,-/0:;<=>?@[\\]^_`{|}~"
 
 typedef struct s_subspecifiers {
 	uint8_t		flags[128];

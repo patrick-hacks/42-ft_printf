@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:50:36 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/29 08:53:54 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ int	ft_printf(const char *format, ...)
 	va_list	args;
 
 	va_start (args, format);
-	ft_vprintf (format, args);
+	return (ft_vprintf(format, args));
 	va_end (args);
 	return (0);
 }

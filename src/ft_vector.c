@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 13:27:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 01:40:30 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/29 09:34:38 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ int	ft_vector_push_back(t_vector *vector, const void *data, int size)
 
 int	ft_vector_pad_back(t_vector *vector, char pad, int size)
 {
+	if (size <= 0)
+		return (0);
 	if (vector->data_size - vector->size - size < 0)
 	{
 		if (ft_vector_set_data_size(vector, 100 + vector->size + size))
