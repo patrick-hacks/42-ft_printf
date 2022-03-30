@@ -21,6 +21,22 @@
 
 #include "ft_printf.h"
 
+void	test_p(char format[20], void *c)
+{
+	int		return_val;
+	char	test[30] = {0};
+
+	test[0] = '%';
+	strcpy(test + 1, format);
+	strcat(test, "p");
+	printf("-----------\n");
+	fflush(stdout);
+	write(1, test, strlen(test));
+	write(1, "\n", 1);
+	return_val = ft_printf(test, c);
+	printf("\nreturn: %d\n", return_val);
+}
+
 void	test_c(char format[20], void *c)
 {
 	int		return_val;
@@ -85,6 +101,11 @@ void	test_duox(char format[20], void *n)
 	return_val = ft_printf(test, n);
 	printf("\nreturn: %d\n", return_val);
 	fflush(stdout);
+
+	test[strlen(test) - 1] = 'X';
+	return_val = ft_printf(test, n);
+	printf("\nreturn: %d\n", return_val);
+	fflush(stdout);
 }
 
 void	test_with_modifiers(char *modifiers, char *add, void *n, void(*f)(char *, void *))
@@ -122,45 +143,45 @@ int	main()
 {
 	test_with_modifiers("-+ 0", "", (void *)4200, test_duox);
 
-	test_with_modifiers("-+ 0", "10", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", "5", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", "4", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", "3", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", "0", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", "0", (void *)0, test_duox);
+	test_with_modifiers("-+ 0#", "10", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", "5", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", "4", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", "3", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", "0", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", "0", (void *)0, test_duox);
 
-	test_with_modifiers("-+ 0", ".10", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", ".5", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", ".4", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", ".3", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", ".0", (void *)4200, test_duox);
-	test_with_modifiers("-+ 0", ".0", (void *)0, test_duox);
+	test_with_modifiers("-+ 0#", ".10", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", ".5", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", ".4", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", ".3", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", ".0", (void *)4200, test_duox);
+	test_with_modifiers("-+ 0#", ".0", (void *)0, test_duox);
 
-	test_with_modifiers("-+ 0", "10.10", (void *)-4200, test_duox);
-	test_with_modifiers("-+ 0", "2.10", (void *)-4200, test_duox);
-	test_with_modifiers("-+ 0", "10.2", (void *)-4200, test_duox);
-	test_with_modifiers("-+ 0", "2.3", (void *)-4200, test_duox);
-	test_with_modifiers("-+ 0", "2.10", (void *)0, test_duox);
-	test_with_modifiers("-+ 0", "10.2", (void *)0, test_duox);
+	test_with_modifiers("-+ 0#", "10.10", (void *)-4200, test_duox);
+	test_with_modifiers("-+ 0#", "2.10", (void *)-4200, test_duox);
+	test_with_modifiers("-+ 0#", "10.2", (void *)-4200, test_duox);
+	test_with_modifiers("-+ 0#", "2.3", (void *)-4200, test_duox);
+	test_with_modifiers("-+ 0#", "2.10", (void *)0, test_duox);
+	test_with_modifiers("-+ 0#", "10.2", (void *)0, test_duox);
 
-	test_with_modifiers("-+ 0", "", (void *)INT_MAX, test_duox);
-	test_with_modifiers("-+ 0", "", (void *)INT_MIN, test_duox);
+	test_with_modifiers("-+ 0#", "", (void *)INT_MAX, test_duox);
+	test_with_modifiers("-+ 0#", "", (void *)INT_MIN, test_duox);
 
-	test_with_modifiers("-+ 0", "hh", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "h", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "l", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "ll", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "j", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "z", (void *)__LONG_LONG_MAX__, test_duox);
-	test_with_modifiers("-+ 0", "t", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "hh", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "h", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "l", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "ll", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "j", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "z", (void *)__LONG_LONG_MAX__, test_duox);
+	test_with_modifiers("-+ 0#", "t", (void *)__LONG_LONG_MAX__, test_duox);
 
-	test_with_modifiers("-+ 0", "hh", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "h", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "l", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "ll", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "j", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "z", (void *)__LONG_LONG_MAX__ + 1, test_duox);
-	test_with_modifiers("-+ 0", "t", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "hh", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "h", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "l", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "ll", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "j", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "z", (void *)__LONG_LONG_MAX__ + 1, test_duox);
+	test_with_modifiers("-+ 0#", "t", (void *)__LONG_LONG_MAX__ + 1, test_duox);
 
 	// STRING
 
@@ -190,6 +211,14 @@ int	main()
 	test_with_modifiers("-", "10", (void *)'a', test_c);
 	test_with_modifiers("-", "10.2", (void *)'a', test_c);
 	test_with_modifiers("-", "2.10", (void *)'a', test_c);
+
+	// POINTER
+
+	int p;
+	test_with_modifiers("-", "", (void *)&p, test_p);
+	test_with_modifiers("-", "0", (void *)0, test_p);
+	test_with_modifiers("-", "10", (void *)0, test_p);
+	test_with_modifiers("-", "20", (void *)&p, test_p);
 
 	size_t	i = 0;
 	while (i < 300)

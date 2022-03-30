@@ -10,7 +10,7 @@ gcc $FLAGS $FILES $INCLUDE $LIB -D EXPECTED -o expected
 ./expected > expected.txt
 gcc $FLAGS $FILES $INCLUDE $LIB -o test
 ./test > got.txt
-diff -u -U2 expected.txt got.txt > result.diff
+diff -u -U6 expected.txt got.txt > result.diff
 if [ -s result.diff ]; then
 	echo "ERROR:"
 	wc -l < result.diff

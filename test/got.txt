@@ -1,0 +1,14666 @@
+-----------
+%d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%10d
+      4200
+return: 10
+      4200
+return: 10
+     10150
+return: 10
+      1068
+return: 10
+      1068
+return: 10
+-----------
+%-10d
+4200      
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%+10d
+     +4200
+return: 10
+      4200
+return: 10
+     10150
+return: 10
+      1068
+return: 10
+      1068
+return: 10
+-----------
+%-+10d
++4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+% 10d
+      4200
+return: 10
+      4200
+return: 10
+     10150
+return: 10
+      1068
+return: 10
+      1068
+return: 10
+-----------
+%- 10d
+ 4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%+ 10d
+     +4200
+return: 10
+      4200
+return: 10
+     10150
+return: 10
+      1068
+return: 10
+      1068
+return: 10
+-----------
+%-+ 10d
++4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%010d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-010d
+4200      
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%+010d
++000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+010d
++4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+% 010d
+ 000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%- 010d
+ 4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%+ 010d
++000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+ 010d
++4200     
+return: 10
+4200      
+return: 10
+10150     
+return: 10
+1068      
+return: 10
+1068      
+return: 10
+-----------
+%#10d
+      4200
+return: 10
+      4200
+return: 10
+    010150
+return: 10
+    0x1068
+return: 10
+    0X1068
+return: 10
+-----------
+%-#10d
+4200      
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%+#10d
+     +4200
+return: 10
+      4200
+return: 10
+    010150
+return: 10
+    0x1068
+return: 10
+    0X1068
+return: 10
+-----------
+%-+#10d
++4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+% #10d
+      4200
+return: 10
+      4200
+return: 10
+    010150
+return: 10
+    0x1068
+return: 10
+    0X1068
+return: 10
+-----------
+%- #10d
+ 4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%+ #10d
+     +4200
+return: 10
+      4200
+return: 10
+    010150
+return: 10
+    0x1068
+return: 10
+    0X1068
+return: 10
+-----------
+%-+ #10d
++4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%0#10d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0x00001068
+return: 10
+0X00001068
+return: 10
+-----------
+%-0#10d
+4200      
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%+0#10d
++000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0x00001068
+return: 10
+0X00001068
+return: 10
+-----------
+%-+0#10d
++4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+% 0#10d
+ 000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0x00001068
+return: 10
+0X00001068
+return: 10
+-----------
+%- 0#10d
+ 4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%+ 0#10d
++000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0x00001068
+return: 10
+0X00001068
+return: 10
+-----------
+%-+ 0#10d
++4200     
+return: 10
+4200      
+return: 10
+010150    
+return: 10
+0x1068    
+return: 10
+0X1068    
+return: 10
+-----------
+%5d
+ 4200
+return: 5
+ 4200
+return: 5
+10150
+return: 5
+ 1068
+return: 5
+ 1068
+return: 5
+-----------
+%-5d
+4200 
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%+5d
++4200
+return: 5
+ 4200
+return: 5
+10150
+return: 5
+ 1068
+return: 5
+ 1068
+return: 5
+-----------
+%-+5d
++4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+% 5d
+ 4200
+return: 5
+ 4200
+return: 5
+10150
+return: 5
+ 1068
+return: 5
+ 1068
+return: 5
+-----------
+%- 5d
+ 4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%+ 5d
++4200
+return: 5
+ 4200
+return: 5
+10150
+return: 5
+ 1068
+return: 5
+ 1068
+return: 5
+-----------
+%-+ 5d
++4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%05d
+04200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-05d
+4200 
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%+05d
++4200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+05d
++4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+% 05d
+ 4200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%- 05d
+ 4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%+ 05d
++4200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+ 05d
++4200
+return: 5
+4200 
+return: 5
+10150
+return: 5
+1068 
+return: 5
+1068 
+return: 5
+-----------
+%#5d
+ 4200
+return: 5
+ 4200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#5d
+4200 
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#5d
++4200
+return: 5
+ 4200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#5d
++4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #5d
+ 4200
+return: 5
+ 4200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #5d
+ 4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #5d
++4200
+return: 5
+ 4200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #5d
++4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#5d
+04200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#5d
+4200 
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#5d
++4200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#5d
++4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#5d
+ 4200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#5d
+ 4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#5d
++4200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#5d
++4200
+return: 5
+4200 
+return: 5
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%04d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-04d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+04d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+04d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 04d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 04d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 04d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 04d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%03d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-03d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+03d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+03d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 03d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 03d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 03d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 03d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%00d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-00d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+00d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+00d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 00d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 00d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 00d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 00d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%00d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-00d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+00d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+00d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 00d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 00d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 00d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 00d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%#0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-#0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% #0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- #0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ #0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ #0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%0#0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0#0d
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0#0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0#0d
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0#0d
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%.10d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-.10d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%+.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+% .10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%- .10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%+ .10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+ .10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%0.10d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-0.10d
+0000004200
+return: 10
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%+0.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+0.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+% 0.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%- 0.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%+ 0.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%-+ 0.10d
++0000004200
+return: 11
+0000004200
+return: 10
+0000010150
+return: 10
+0000001068
+return: 10
+0000001068
+return: 10
+-----------
+%#.10d
+0000004200
+return: 10
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-#.10d
+0000004200
+return: 10
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%+#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-+#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+% #.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%- #.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%+ #.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-+ #.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%0#.10d
+0000004200
+return: 10
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-0#.10d
+0000004200
+return: 10
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%+0#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-+0#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+% 0#.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%- 0#.10d
+ 0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%+ 0#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%-+ 0#.10d
++0000004200
+return: 11
+0000004200
+return: 10
+00000010150
+return: 11
+0x0000001068
+return: 12
+0X0000001068
+return: 12
+-----------
+%.5d
+04200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-.5d
+04200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%+.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+% .5d
+ 04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%- .5d
+ 04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%+ .5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+ .5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%0.5d
+04200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-0.5d
+04200
+return: 5
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%+0.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+0.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+% 0.5d
+ 04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%- 0.5d
+ 04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%+ 0.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%-+ 0.5d
++04200
+return: 6
+04200
+return: 5
+10150
+return: 5
+01068
+return: 5
+01068
+return: 5
+-----------
+%#.5d
+04200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-#.5d
+04200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%+#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-+#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+% #.5d
+ 04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%- #.5d
+ 04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%+ #.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-+ #.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%0#.5d
+04200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-0#.5d
+04200
+return: 5
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%+0#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-+0#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+% 0#.5d
+ 04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%- 0#.5d
+ 04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%+ 0#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%-+ 0#.5d
++04200
+return: 6
+04200
+return: 5
+010150
+return: 6
+0x01068
+return: 7
+0X01068
+return: 7
+-----------
+%.4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-.4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% .4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- .4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ .4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ .4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%0.4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-0.4d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+0.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+0.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 0.4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 0.4d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 0.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 0.4d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#.4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#.4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #.4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #.4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#.4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#.4d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#.4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#.4d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#.4d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%.3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-.3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% .3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- .3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ .3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ .3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%0.3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-0.3d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+0.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+0.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 0.3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 0.3d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 0.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 0.3d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#.3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#.3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #.3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #.3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#.3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#.3d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#.3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#.3d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#.3d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%.0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-.0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% .0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- .0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ .0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ .0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%0.0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-0.0d
+4200
+return: 4
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+0.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+0.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+% 0.0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%- 0.0d
+ 4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%+ 0.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%-+ 0.0d
++4200
+return: 5
+4200
+return: 4
+10150
+return: 5
+1068
+return: 4
+1068
+return: 4
+-----------
+%#.0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-#.0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% #.0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- #.0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ #.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ #.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%0#.0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-0#.0d
+4200
+return: 4
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+0#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+0#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+% 0#.0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%- 0#.0d
+ 4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%+ 0#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%-+ 0#.0d
++4200
+return: 5
+4200
+return: 4
+010150
+return: 6
+0x1068
+return: 6
+0X1068
+return: 6
+-----------
+%.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+% .0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%- .0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+ .0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+ .0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%0.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-0.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+0.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+0.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+% 0.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%- 0.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+ 0.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+ 0.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%#.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-#.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+% #.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%- #.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+ #.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+ #.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%0#.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-0#.0d
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+0#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+0#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+% 0#.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%- 0#.0d
+ 
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%+ 0#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%-+ 0#.0d
++
+return: 1
+
+return: 0
+
+return: 0
+
+return: 0
+
+return: 0
+-----------
+%10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+% 10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%- 10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+ 10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+ 10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+% 010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%- 010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+ 010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+ 010.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+% #10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%- #10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+ #10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+ #10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+% 0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%- 0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+ 0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+ 0#10.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+% 2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%- 2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+ 2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+ 2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+% 02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%- 02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%+ 02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%-+ 02.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+37777767630
+return: 11
+00ffffef98
+return: 10
+00FFFFEF98
+return: 10
+-----------
+%#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+% #2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%- #2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+ #2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+ #2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+% 0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%- 0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%+ 0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%-+ 0#2.10d
+-0000004200
+return: 11
+4294963096
+return: 10
+037777767630
+return: 12
+0x00ffffef98
+return: 12
+0X00FFFFEF98
+return: 12
+-----------
+%10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%+10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-+10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+% 10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%- 10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%+ 10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-+ 10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%010.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-010.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%+010.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-+010.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+% 010.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%- 010.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%+ 010.2d
+     -4200
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+  ffffef98
+return: 10
+  FFFFEF98
+return: 10
+-----------
+%-+ 010.2d
+-4200     
+return: 10
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98  
+return: 10
+FFFFEF98  
+return: 10
+-----------
+%#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+% #10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%- #10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+ #10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+ #10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%0#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-0#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+0#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+0#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+% 0#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%- 0#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+ 0#10.2d
+     -4200
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+ 0#10.2d
+-4200     
+return: 10
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%+2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-+2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+% 2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%- 2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%+ 2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-+ 2.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%+02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-+02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+% 02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%- 02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%+ 02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%-+ 02.3d
+-4200
+return: 5
+4294963096
+return: 10
+37777767630
+return: 11
+ffffef98
+return: 8
+FFFFEF98
+return: 8
+-----------
+%#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+% #2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%- #2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+ #2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+ #2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+% 0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%- 0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%+ 0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%-+ 0#2.3d
+-4200
+return: 5
+4294963096
+return: 10
+037777767630
+return: 12
+0xffffef98
+return: 10
+0XFFFFEF98
+return: 10
+-----------
+%2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+% 2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%- 2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+ 2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+ 2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%02.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-02.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+02.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+02.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+% 02.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%- 02.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+ 02.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+ 02.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%#2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-#2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+% #2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%- #2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+ #2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+ #2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%0#2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-0#2.10d
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+0#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+0#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+% 0#2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%- 0#2.10d
+ 0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%+ 0#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%-+ 0#2.10d
++0000000000
+return: 11
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+0000000000
+return: 10
+-----------
+%10.2d
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-10.2d
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+% 10.2d
+         00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%- 10.2d
+ 00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+ 10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+ 10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%010.2d
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-010.2d
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+010.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+010.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+% 010.2d
+         00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%- 010.2d
+ 00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+ 010.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+ 010.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%#10.2d
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-#10.2d
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+#10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+#10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+% #10.2d
+         00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%- #10.2d
+ 00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+ #10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+ #10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%0#10.2d
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-0#10.2d
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+0#10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+0#10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+% 0#10.2d
+         00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%- 0#10.2d
+ 00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%+ 0#10.2d
+        +00
+return: 11
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+        00
+return: 10
+-----------
+%-+ 0#10.2d
++00        
+return: 11
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+00        
+return: 10
+-----------
+%d
+2147483647
+return: 10
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-d
+2147483647
+return: 10
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%+d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-+d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+% d
+ 2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%- d
+ 2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%+ d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-+ d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%0d
+2147483647
+return: 10
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-0d
+2147483647
+return: 10
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%+0d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-+0d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+% 0d
+ 2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%- 0d
+ 2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%+ 0d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%-+ 0d
++2147483647
+return: 11
+2147483647
+return: 10
+17777777777
+return: 11
+7fffffff
+return: 8
+7FFFFFFF
+return: 8
+-----------
+%#d
+2147483647
+return: 10
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-#d
+2147483647
+return: 10
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%+#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-+#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+% #d
+ 2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%- #d
+ 2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%+ #d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-+ #d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%0#d
+2147483647
+return: 10
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-0#d
+2147483647
+return: 10
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%+0#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-+0#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+% 0#d
+ 2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%- 0#d
+ 2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%+ 0#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%-+ 0#d
++2147483647
+return: 11
+2147483647
+return: 10
+017777777777
+return: 12
+0x7fffffff
+return: 10
+0X7FFFFFFF
+return: 10
+-----------
+%d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%+d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-+d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+% d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%- d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%+ d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-+ d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%+0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-+0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+% 0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%- 0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%+ 0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%-+ 0d
+-2147483648
+return: 11
+2147483648
+return: 10
+20000000000
+return: 11
+80000000
+return: 8
+80000000
+return: 8
+-----------
+%#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%+#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-+#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+% #d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%- #d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%+ #d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-+ #d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%+0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-+0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+% 0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%- 0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%+ 0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%-+ 0#d
+-2147483648
+return: 11
+2147483648
+return: 10
+020000000000
+return: 12
+0x80000000
+return: 10
+0X80000000
+return: 10
+-----------
+%hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%+hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-+hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+% hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%- hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%+ hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-+ hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%+0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-+0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+% 0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%- 0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%+ 0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%-+ 0hhd
+-1
+return: 2
+255
+return: 3
+377
+return: 3
+ff
+return: 2
+FF
+return: 2
+-----------
+%#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%+#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-+#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+% #hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%- #hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%+ #hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-+ #hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%+0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-+0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+% 0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%- 0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%+ 0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%-+ 0#hhd
+-1
+return: 2
+255
+return: 3
+0377
+return: 4
+0xff
+return: 4
+0XFF
+return: 4
+-----------
+%hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%+hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-+hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+% hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%- hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%+ hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-+ hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%+0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-+0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+% 0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%- 0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%+ 0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%-+ 0hd
+-1
+return: 2
+65535
+return: 5
+177777
+return: 6
+ffff
+return: 4
+FFFF
+return: 4
+-----------
+%#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%+#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-+#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+% #hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%- #hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%+ #hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-+ #hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%+0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-+0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+% 0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%- 0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%+ 0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%-+ 0#hd
+-1
+return: 2
+65535
+return: 5
+0177777
+return: 7
+0xffff
+return: 6
+0XFFFF
+return: 6
+-----------
+%ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%0ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-0ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+0ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+0ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% 0ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- 0ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ 0ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ 0ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%#ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-#ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% #ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- #ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ #ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ #ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%0#ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-0#ld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+0#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+0#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% 0#ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- 0#ld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ 0#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ 0#ld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%0lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-0lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+0lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+0lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% 0lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- 0lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ 0lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ 0lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%#lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-#lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% #lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- #lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ #lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ #lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%0#lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-0#lld
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+0#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+0#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% 0#lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- 0#lld
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ 0#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ 0#lld
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%0jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-0jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+0jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+0jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% 0jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- 0jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ 0jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ 0jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%#jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-#jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% #jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- #jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ #jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ #jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%0#jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-0#jd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+0#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+0#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% 0#jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- 0#jd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ 0#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ 0#jd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%0zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-0zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+0zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+0zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% 0zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- 0zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ 0zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ 0zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%#zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-#zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% #zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- #zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ #zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ #zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%0#zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-0#zd
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+0#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+0#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% 0#zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- 0#zd
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ 0#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ 0#zd
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%0td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-0td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+0td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+0td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+% 0td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%- 0td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%+ 0td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%-+ 0td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+777777777777777777777
+return: 21
+7fffffffffffffff
+return: 16
+7FFFFFFFFFFFFFFF
+return: 16
+-----------
+%#td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-#td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% #td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- #td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ #td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ #td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%0#td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-0#td
+9223372036854775807
+return: 19
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+0#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+0#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+% 0#td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%- 0#td
+ 9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%+ 0#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%-+ 0#td
++9223372036854775807
+return: 20
+9223372036854775807
+return: 19
+0777777777777777777777
+return: 22
+0x7fffffffffffffff
+return: 18
+0X7FFFFFFFFFFFFFFF
+return: 18
+-----------
+%hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%0hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%#hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-#hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% #hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- #hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ #hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ #hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%0#hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0#hhd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0#hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0#hhd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0#hhd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%0hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%#hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-#hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% #hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- #hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ #hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ #hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%0#hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-0#hd
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+0#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+0#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+% 0#hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%- 0#hd
+ 0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%+ 0#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%-+ 0#hd
++0
+return: 2
+0
+return: 1
+0
+return: 1
+0
+return: 1
+0
+return: 1
+-----------
+%ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% 0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- 0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ 0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ 0ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% #ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- #ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ #ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ #ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% 0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- 0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ 0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ 0#ld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% 0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- 0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ 0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ 0lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% #lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- #lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ #lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ #lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% 0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- 0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ 0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ 0#lld
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% 0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- 0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ 0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ 0jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% #jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- #jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ #jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ #jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% 0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- 0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ 0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ 0#jd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% 0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- 0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ 0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ 0zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% #zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- #zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ #zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ #zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% 0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- 0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ 0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ 0#zd
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+% 0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%- 0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%+ 0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%-+ 0td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+1000000000000000000000
+return: 22
+8000000000000000
+return: 16
+8000000000000000
+return: 16
+-----------
+%#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% #td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- #td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ #td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ #td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+% 0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%- 0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%+ 0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%-+ 0#td
+-9223372036854775808
+return: 20
+9223372036854775808
+return: 19
+01000000000000000000000
+return: 23
+0x8000000000000000
+return: 18
+0X8000000000000000
+return: 18
+-----------
+%s
+
+return: 0
+-----------
+%-s
+
+return: 0
+-----------
+%.10s
+
+return: 0
+-----------
+%-.10s
+
+return: 0
+-----------
+%10s
+          
+return: 10
+-----------
+%-10s
+          
+return: 10
+-----------
+%10.2s
+          
+return: 10
+-----------
+%-10.2s
+          
+return: 10
+-----------
+%2.10s
+  
+return: 2
+-----------
+%-2.10s
+  
+return: 2
+-----------
+%s
+42 is a cool school
+return: 19
+-----------
+%-s
+42 is a cool school
+return: 19
+-----------
+%.10s
+42 is a co
+return: 10
+-----------
+%-.10s
+42 is a co
+return: 10
+-----------
+%10s
+42 is a cool school
+return: 19
+-----------
+%-10s
+42 is a cool school
+return: 19
+-----------
+%10.2s
+        42
+return: 10
+-----------
+%-10.2s
+42        
+return: 10
+-----------
+%2.10s
+42 is a co
+return: 10
+-----------
+%-2.10s
+42 is a co
+return: 10
+-----------
+%.19s
+42 is a cool school
+return: 19
+-----------
+%-.19s
+42 is a cool school
+return: 19
+-----------
+%19s
+42 is a cool school
+return: 19
+-----------
+%-19s
+42 is a cool school
+return: 19
+-----------
+%.20s
+42 is a cool school
+return: 19
+-----------
+%-.20s
+42 is a cool school
+return: 19
+-----------
+%20s
+ 42 is a cool school
+return: 20
+-----------
+%-20s
+42 is a cool school 
+return: 20
+-----------
+%.21s
+42 is a cool school
+return: 19
+-----------
+%-.21s
+42 is a cool school
+return: 19
+-----------
+%21s
+  42 is a cool school
+return: 21
+-----------
+%-21s
+42 is a cool school  
+return: 21
+-----------
+%c
+a
+return: 1
+-----------
+%-c
+a
+return: 1
+-----------
+%2.c
+ a
+return: 2
+-----------
+%-2.c
+a 
+return: 2
+-----------
+%.c
+a
+return: 1
+-----------
+%-.c
+a
+return: 1
+-----------
+%.10c
+a
+return: 1
+-----------
+%-.10c
+a
+return: 1
+-----------
+%10c
+         a
+return: 10
+-----------
+%-10c
+a         
+return: 10
+-----------
+%10.2c
+         a
+return: 10
+-----------
+%-10.2c
+a         
+return: 10
+-----------
+%2.10c
+ a
+return: 2
+-----------
+%-2.10c
+a 
+return: 2
+-----------
+%p
+0xe2ae7998
+return: 10
+-----------
+%-p
+0xe2ae7998
+return: 10
+-----------
+%0p
+0
+return: 1
+-----------
+%-0p
+0
+return: 1
+-----------
+%10p
+         0
+return: 10
+-----------
+%-10p
+0         
+return: 10
+-----------
+%20p
+          0xe2ae7998
+return: 20
+-----------
+%-20p
+0xe2ae7998          
+return: 20
+-----------
+%c
+ 
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+	
+return: 1
+-----------
+%c
+
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+ 
+return: 1
+-----------
+%c
+!
+return: 1
+-----------
+%c
+"
+return: 1
+-----------
+%c
+#
+return: 1
+-----------
+%c
+$
+return: 1
+-----------
+%c
+%
+return: 1
+-----------
+%c
+&
+return: 1
+-----------
+%c
+'
+return: 1
+-----------
+%c
+(
+return: 1
+-----------
+%c
+)
+return: 1
+-----------
+%c
+*
+return: 1
+-----------
+%c
++
+return: 1
+-----------
+%c
+,
+return: 1
+-----------
+%c
+-
+return: 1
+-----------
+%c
+.
+return: 1
+-----------
+%c
+/
+return: 1
+-----------
+%c
+0
+return: 1
+-----------
+%c
+1
+return: 1
+-----------
+%c
+2
+return: 1
+-----------
+%c
+3
+return: 1
+-----------
+%c
+4
+return: 1
+-----------
+%c
+5
+return: 1
+-----------
+%c
+6
+return: 1
+-----------
+%c
+7
+return: 1
+-----------
+%c
+8
+return: 1
+-----------
+%c
+9
+return: 1
+-----------
+%c
+:
+return: 1
+-----------
+%c
+;
+return: 1
+-----------
+%c
+<
+return: 1
+-----------
+%c
+=
+return: 1
+-----------
+%c
+>
+return: 1
+-----------
+%c
+?
+return: 1
+-----------
+%c
+@
+return: 1
+-----------
+%c
+A
+return: 1
+-----------
+%c
+B
+return: 1
+-----------
+%c
+C
+return: 1
+-----------
+%c
+D
+return: 1
+-----------
+%c
+E
+return: 1
+-----------
+%c
+F
+return: 1
+-----------
+%c
+G
+return: 1
+-----------
+%c
+H
+return: 1
+-----------
+%c
+I
+return: 1
+-----------
+%c
+J
+return: 1
+-----------
+%c
+K
+return: 1
+-----------
+%c
+L
+return: 1
+-----------
+%c
+M
+return: 1
+-----------
+%c
+N
+return: 1
+-----------
+%c
+O
+return: 1
+-----------
+%c
+P
+return: 1
+-----------
+%c
+Q
+return: 1
+-----------
+%c
+R
+return: 1
+-----------
+%c
+S
+return: 1
+-----------
+%c
+T
+return: 1
+-----------
+%c
+U
+return: 1
+-----------
+%c
+V
+return: 1
+-----------
+%c
+W
+return: 1
+-----------
+%c
+X
+return: 1
+-----------
+%c
+Y
+return: 1
+-----------
+%c
+Z
+return: 1
+-----------
+%c
+[
+return: 1
+-----------
+%c
+\
+return: 1
+-----------
+%c
+]
+return: 1
+-----------
+%c
+^
+return: 1
+-----------
+%c
+_
+return: 1
+-----------
+%c
+`
+return: 1
+-----------
+%c
+a
+return: 1
+-----------
+%c
+b
+return: 1
+-----------
+%c
+c
+return: 1
+-----------
+%c
+d
+return: 1
+-----------
+%c
+e
+return: 1
+-----------
+%c
+f
+return: 1
+-----------
+%c
+g
+return: 1
+-----------
+%c
+h
+return: 1
+-----------
+%c
+i
+return: 1
+-----------
+%c
+j
+return: 1
+-----------
+%c
+k
+return: 1
+-----------
+%c
+l
+return: 1
+-----------
+%c
+m
+return: 1
+-----------
+%c
+n
+return: 1
+-----------
+%c
+o
+return: 1
+-----------
+%c
+p
+return: 1
+-----------
+%c
+q
+return: 1
+-----------
+%c
+r
+return: 1
+-----------
+%c
+s
+return: 1
+-----------
+%c
+t
+return: 1
+-----------
+%c
+u
+return: 1
+-----------
+%c
+v
+return: 1
+-----------
+%c
+w
+return: 1
+-----------
+%c
+x
+return: 1
+-----------
+%c
+y
+return: 1
+-----------
+%c
+z
+return: 1
+-----------
+%c
+{
+return: 1
+-----------
+%c
+|
+return: 1
+-----------
+%c
+}
+return: 1
+-----------
+%c
+~
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+€
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+‚
+return: 1
+-----------
+%c
+ƒ
+return: 1
+-----------
+%c
+„
+return: 1
+-----------
+%c
+…
+return: 1
+-----------
+%c
+†
+return: 1
+-----------
+%c
+‡
+return: 1
+-----------
+%c
+ˆ
+return: 1
+-----------
+%c
+‰
+return: 1
+-----------
+%c
+Š
+return: 1
+-----------
+%c
+‹
+return: 1
+-----------
+%c
+Œ
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+‘
+return: 1
+-----------
+%c
+’
+return: 1
+-----------
+%c
+“
+return: 1
+-----------
+%c
+”
+return: 1
+-----------
+%c
+•
+return: 1
+-----------
+%c
+–
+return: 1
+-----------
+%c
+—
+return: 1
+-----------
+%c
+˜
+return: 1
+-----------
+%c
+™
+return: 1
+-----------
+%c
+š
+return: 1
+-----------
+%c
+›
+return: 1
+-----------
+%c
+œ
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+Ÿ
+return: 1
+-----------
+%c
+ 
+return: 1
+-----------
+%c
+¡
+return: 1
+-----------
+%c
+¢
+return: 1
+-----------
+%c
+£
+return: 1
+-----------
+%c
+¤
+return: 1
+-----------
+%c
+¥
+return: 1
+-----------
+%c
+¦
+return: 1
+-----------
+%c
+§
+return: 1
+-----------
+%c
+¨
+return: 1
+-----------
+%c
+©
+return: 1
+-----------
+%c
+ª
+return: 1
+-----------
+%c
+«
+return: 1
+-----------
+%c
+¬
+return: 1
+-----------
+%c
+­
+return: 1
+-----------
+%c
+®
+return: 1
+-----------
+%c
+¯
+return: 1
+-----------
+%c
+°
+return: 1
+-----------
+%c
+±
+return: 1
+-----------
+%c
+²
+return: 1
+-----------
+%c
+³
+return: 1
+-----------
+%c
+´
+return: 1
+-----------
+%c
+µ
+return: 1
+-----------
+%c
+¶
+return: 1
+-----------
+%c
+·
+return: 1
+-----------
+%c
+¸
+return: 1
+-----------
+%c
+¹
+return: 1
+-----------
+%c
+º
+return: 1
+-----------
+%c
+»
+return: 1
+-----------
+%c
+¼
+return: 1
+-----------
+%c
+½
+return: 1
+-----------
+%c
+¾
+return: 1
+-----------
+%c
+¿
+return: 1
+-----------
+%c
+À
+return: 1
+-----------
+%c
+Á
+return: 1
+-----------
+%c
+Â
+return: 1
+-----------
+%c
+Ã
+return: 1
+-----------
+%c
+Ä
+return: 1
+-----------
+%c
+Å
+return: 1
+-----------
+%c
+Æ
+return: 1
+-----------
+%c
+Ç
+return: 1
+-----------
+%c
+È
+return: 1
+-----------
+%c
+É
+return: 1
+-----------
+%c
+Ê
+return: 1
+-----------
+%c
+Ë
+return: 1
+-----------
+%c
+Ì
+return: 1
+-----------
+%c
+Í
+return: 1
+-----------
+%c
+Î
+return: 1
+-----------
+%c
+Ï
+return: 1
+-----------
+%c
+Ğ
+return: 1
+-----------
+%c
+Ñ
+return: 1
+-----------
+%c
+Ò
+return: 1
+-----------
+%c
+Ó
+return: 1
+-----------
+%c
+Ô
+return: 1
+-----------
+%c
+Õ
+return: 1
+-----------
+%c
+Ö
+return: 1
+-----------
+%c
+×
+return: 1
+-----------
+%c
+Ø
+return: 1
+-----------
+%c
+Ù
+return: 1
+-----------
+%c
+Ú
+return: 1
+-----------
+%c
+Û
+return: 1
+-----------
+%c
+Ü
+return: 1
+-----------
+%c
+İ
+return: 1
+-----------
+%c
+Ş
+return: 1
+-----------
+%c
+ß
+return: 1
+-----------
+%c
+à
+return: 1
+-----------
+%c
+á
+return: 1
+-----------
+%c
+â
+return: 1
+-----------
+%c
+ã
+return: 1
+-----------
+%c
+ä
+return: 1
+-----------
+%c
+å
+return: 1
+-----------
+%c
+æ
+return: 1
+-----------
+%c
+ç
+return: 1
+-----------
+%c
+è
+return: 1
+-----------
+%c
+é
+return: 1
+-----------
+%c
+ê
+return: 1
+-----------
+%c
+ë
+return: 1
+-----------
+%c
+ì
+return: 1
+-----------
+%c
+í
+return: 1
+-----------
+%c
+î
+return: 1
+-----------
+%c
+ï
+return: 1
+-----------
+%c
+ğ
+return: 1
+-----------
+%c
+ñ
+return: 1
+-----------
+%c
+ò
+return: 1
+-----------
+%c
+ó
+return: 1
+-----------
+%c
+ô
+return: 1
+-----------
+%c
+õ
+return: 1
+-----------
+%c
+ö
+return: 1
+-----------
+%c
+÷
+return: 1
+-----------
+%c
+ø
+return: 1
+-----------
+%c
+ù
+return: 1
+-----------
+%c
+ú
+return: 1
+-----------
+%c
+û
+return: 1
+-----------
+%c
+ü
+return: 1
+-----------
+%c
+ı
+return: 1
+-----------
+%c
+ş
+return: 1
+-----------
+%c
+ÿ
+return: 1
+-----------
+%c
+ 
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+	
+return: 1
+-----------
+%c
+
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+
+return: 1
+-----------
+%c
+ 
+return: 1
+-----------
+%c
+!
+return: 1
+-----------
+%c
+"
+return: 1
+-----------
+%c
+#
+return: 1
+-----------
+%c
+$
+return: 1
+-----------
+%c
+%
+return: 1
+-----------
+%c
+&
+return: 1
+-----------
+%c
+'
+return: 1
+-----------
+%c
+(
+return: 1
+-----------
+%c
+)
+return: 1
+-----------
+%c
+*
+return: 1
+-----------
+%c
++
+return: 1

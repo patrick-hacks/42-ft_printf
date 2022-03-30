@@ -17,6 +17,7 @@
 #include <stddef.h>
 #include <stdarg.h>
 
+#include "libft.h"
 #include "ft_vector.h"
 #include "subspecifier.h"
 
@@ -81,20 +82,51 @@ unsigned long long get_with_length_signed(uint8_t *flags, va_list args)
 	return ((unsigned long long)(int)va_arg(args, int));
 }
 
+int	add_prefix(char *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
+{
+	int	base_length;
+
+	base_length = ft_strlen(base);
+	buffer[0] = '\0';
+	buffer[1] = '\0';
+	buffer[2] = '\0';
+	if(!data->flags['#'] || base_length == 10 || nbr.n == 0)
+		return (0);
+	if (base_length == 8)
+	{
+		buffer[0] = '0';
+		return (1);
+	}
+	if (base_length == 16 && base[15] == 'f')
+	{
+		buffer[0] = '0';
+		buffer[1] = 'x';
+		return (2);
+	}
+	if (base_length == 16 && base[15] == 'F')
+	{
+		buffer[0] = '0';
+		buffer[1] = 'X';
+		return (2);
+	}
+	return (0);
+}
+
 int	add_nbr(t_vector *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 {
 	char	nbr_str[20];
+	char	prefix[3];
 	int		nbr_length;
 	int		full_nbr_length;
 	char	char_sign;
 
 	nbr_length = sbase(nbr.n, base, nbr_str);
 	char_sign = get_sign(data, nbr.sign);
-	full_nbr_length = nbr_length;
-	if (data->precision > full_nbr_length)
-		full_nbr_length = data->precision;
+	full_nbr_length = nbr_length + add_prefix(prefix, data, base, nbr);
 	if (char_sign)
 		full_nbr_length++;
+	if (data->precision > full_nbr_length)
+		full_nbr_length = data->precision;
 	if (data->precision != -1)
 		data->flags['0'] = 0;
 	if (!data->flags['-'] && !data->flags['0'])
@@ -102,6 +134,7 @@ int	add_nbr(t_vector *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 		//add_width(buffer, data, full_nbr_length);
 	if (char_sign)
 		ft_vector_push_back(buffer, &char_sign, 1);
+	ft_vector_push_back(buffer, prefix, ft_strlen(prefix));
 	if (!data->flags['-'] && data->flags['0'])
 		ft_vector_pad_back(buffer, '0', data->width - full_nbr_length);
 		//add_width(buffer, data, full_nbr_length);
