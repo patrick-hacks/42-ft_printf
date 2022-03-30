@@ -12,16 +12,21 @@
 
 #include "specifier_functions.h"
 
+#include <stdint.h>
+#include <stddef.h>
 #include <stdarg.h>
 
 #include "ft_vector.h"
 #include "subspecifier.h"
+#include "specifier_helper.h"
 
 int	s_hexa_unsigned_up(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	//ft_vector_push_back(buffer, "error:", 5);
-	(void) buffer;
-	(void) data;
-	(void) args;
-	return (1);
+	t_nbr	nbr;
+
+	data->flags['+'] = 0;
+	data->flags[' '] = 0;
+	nbr.n = get_with_length_unsigned(data->flags, args);
+	nbr.sign = 0;
+	return (add_nbr(buffer, data, "0123456789ABCDEF", nbr));
 }

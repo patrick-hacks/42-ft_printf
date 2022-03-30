@@ -16,9 +16,20 @@
 typedef struct s_vector t_vector;
 typedef struct s_subspecifiers t_subspecifiers;
 
-char		get_sign(t_subspecifiers *data, int sign);
-int			s_long_long(t_vector *buffer, t_subspecifiers *data,
-	unsigned long long n, int sign);
+#include <stdint.h>
+#include <stdarg.h>
+
+typedef struct s_nbr {
+	long long	n;
+	char				sign;
+}						t_nbr;
+
+char				get_sign(t_subspecifiers *data, int sign);
+int					add_nbr(t_vector *buffer, t_subspecifiers *data,
+						char *base, t_nbr nbr);
+
 int			sbase(unsigned long long nbr, char *base, char *output);
+unsigned long long	get_with_length_unsigned(uint8_t *flags, va_list args);
+unsigned long long	get_with_length_signed(uint8_t *flags, va_list args);
 
 #endif // SPECIFIER_HELPER_H

@@ -1,17 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s_integer_unsigned.c                               :+:      :+:    :+:   */
+/*   s_integer_signed.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 04:56:02 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 11:02:43 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/29 11:02:48 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "specifier_functions.h"
 
+#include <stdint.h>
+#include <stddef.h>
 #include <stdarg.h>
 
 #include "ft_vector.h"
@@ -20,15 +22,11 @@
 
 int	s_integer_unsigned(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	int		val;
-	int		sign;
+	t_nbr	nbr;
 
-	val = va_arg(args, int);
-	sign = 0;
-	if (val < 0)
-	{
-		val *= -1;
-		sign = 1;
-	}
-	return (s_long_long(buffer, data, (unsigned long long)val, sign));
+	data->flags['+'] = 0;
+	data->flags[' '] = 0;
+	nbr.n = get_with_length_unsigned(data->flags, args);
+	nbr.sign = 0;
+	return (add_nbr(buffer, data, "0123456789", nbr));
 }

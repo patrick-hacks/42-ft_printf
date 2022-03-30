@@ -12,6 +12,8 @@
 
 #include "specifier_functions.h"
 
+#include <stdint.h>
+#include <stddef.h>
 #include <stdarg.h>
 
 #include "ft_vector.h"
@@ -20,15 +22,14 @@
 
 int	s_integer_signed(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	int		val;
-	int		sign;
+	t_nbr	nbr;
 
-	val = va_arg(args, int);
-	sign = 0;
-	if (val < 0)
+	nbr.n = get_with_length_signed(data->flags, args);
+	nbr.sign = 0;
+	if (nbr.n < 0)
 	{
-		val *= -1;
-		sign = 1;
+		nbr.n *= -1;
+		nbr.sign = 1;
 	}
-	return (s_long_long(buffer, data, (unsigned long long)val, sign));
+	return (add_nbr(buffer, data, "0123456789", nbr));
 }

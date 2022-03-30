@@ -26,7 +26,7 @@ static int	set_length(unsigned char c, t_subspecifiers *data)
 	{
 		if (c == LENGTH_CHARS[i])
 		{
-			(data->length)[i]++;
+			(data->flags)[(int)c]++;
 			return (0);
 		}
 		i++;

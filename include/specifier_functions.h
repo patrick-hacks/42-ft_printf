@@ -144,7 +144,7 @@ static const int8_t spec_function_id[] =
 	0,						// r //
 	e_string,				// s //
 	e_error,				// t // USED FOR LENGTH
-	0,						// u //
+	e_integer_unsigned,		// u //
 	0,						// v //
 	0,						// w //
 	e_hexa_unsigned_low,	// x //

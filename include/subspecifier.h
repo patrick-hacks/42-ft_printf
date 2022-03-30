@@ -23,7 +23,6 @@ typedef struct s_subspecifiers {
 	uint8_t		flags[128];
 	int			width;
 	int			precision;
-	uint8_t		length[sizeof(LENGTH_CHARS)];
 }				t_subspecifiers;
 
 void	init_t_subspecifiers(t_subspecifiers *data);

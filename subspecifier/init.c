@@ -27,9 +27,4 @@ void	init_t_subspecifiers(t_subspecifiers *data)
 		i++;
 	}
 	i = 0;
-	while (i < (int)sizeof(data->length))
-	{
-		(data->length)[i] = 0;
-		i++;
-	}
 }

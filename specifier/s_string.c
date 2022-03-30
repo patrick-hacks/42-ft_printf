@@ -13,6 +13,7 @@
 #include "specifier_functions.h"
 
 #include <stdarg.h>
+#include <wchar.h>
 
 #include "ft_vector.h"
 #include "subspecifier.h"
