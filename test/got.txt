@@ -13446,22 +13446,6 @@ return: 20
 %-20p
 0x55c8335596ed      
 return: 20
------------
-
-
-return: 0
------------
-42
-42
-return: 2
------------
-psekfsoegspogmpgmrdgmdprg
-psekfsoegspogmpgmrdgmdprg
-return: 25
------------
-%%
-%
-return: 1
-123%d
+42psekfsoegspogmpgmrdgmdprg%123%d
 123%dasdi
 4212342%deasy

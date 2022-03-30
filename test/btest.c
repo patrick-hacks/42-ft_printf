@@ -21,20 +21,6 @@
 
 #include "ft_printf.h"
 
-void	test(char format[20])
-{
-	int		return_val;
-	char	test[30] = {0};
-
-	strcpy(test, format);
-	printf("-----------\n");
-	fflush(stdout);
-	write(1, test, strlen(test));
-	write(1, "\n", 1);
-	return_val = ft_printf(test);
-	printf("\nreturn: %d\n", return_val);
-}
-
 void	test_p(char format[20], void *c)
 {
 	int		return_val;
@@ -236,11 +222,11 @@ int	main()
 	//while (i < 300)
 	//	test_c("", (void *)i++);
 
-	test("");
-	test("42");
-	test("psekfsoegspogmpgmrdgmdprg");
-	test("%%");
 	fflush(stdout);
+	ft_printf("");
+	ft_printf("42");
+	ft_printf("psekfsoegspogmpgmrdgmdprg");
+	ft_printf("%%");
 	ft_printf("%d\n", 123);
 	ft_printf("%dasdi\n", 123);
 	ft_printf("42%deasy\n", 123);

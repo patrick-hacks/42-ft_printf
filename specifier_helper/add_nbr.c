@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   s_long_long.c                                      :+:      :+:    :+:   */
+/*   add_nbr.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 04:56:24 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 09:45:41 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/30 20:08:17 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "specifier_helper.h"
 
-//#include "libft.h"
 #include <stdint.h>
 #include <stddef.h>
 #include <stdarg.h>
@@ -20,29 +19,6 @@
 #include "libft.h"
 #include "ft_vector.h"
 #include "subspecifier.h"
-
-// static void	add_precision(t_vector *buffer, t_subspecifiers *data, int nbr_length)
-// {
-// 	int	padding;
-
-// 	if (data->precision == -1)
-// 		return ;
-// 	padding = data->precision - nbr_length;
-// 	if (padding > 0)
-// 		ft_vector_pad_back(buffer, '0', padding);
-// }
-
-// static void	add_width(t_vector *buffer, t_subspecifiers *data, int length)
-// {
-// 	char	padding;
-
-// 	if (data->width - length <= 0)
-// 		return ;
-// 	padding = ' ';
-// 	if (data->flags['0'])
-// 		padding = '0';
-// 	ft_vector_pad_back(buffer, padding, data->width - length);
-// }
 
 unsigned long long get_with_length_unsigned(uint8_t *flags, va_list args)
 {
@@ -81,7 +57,6 @@ unsigned long long get_with_length_signed(uint8_t *flags, va_list args)
 		return ((ptrdiff_t)va_arg(args, ptrdiff_t));
 	return ((unsigned long long)(int)va_arg(args, int));
 }
-
 
 int	add_prefix(char *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 {
