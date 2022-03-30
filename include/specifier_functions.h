@@ -68,7 +68,7 @@ enum e_test {
 	e_percent = 18
 };
 
-const static t_specifier_function	specifier_functions[] = {
+static const t_specifier_function	specifier_functions[] = {
 	s_error,				// 0
 	s_integer_signed,		// 1
 	s_integer_unsigned,		// 2

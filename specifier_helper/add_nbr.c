@@ -82,69 +82,61 @@ unsigned long long get_with_length_signed(uint8_t *flags, va_list args)
 	return ((unsigned long long)(int)va_arg(args, int));
 }
 
+
 int	add_prefix(char *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 {
 	int	base_length;
 
 	base_length = ft_strlen(base);
-	buffer[0] = '\0';
-	buffer[1] = '\0';
-	buffer[2] = '\0';
-	if(!data->flags['#'] || base_length == 10 || nbr.n == 0)
+	ft_memset(buffer, '\0', 3);
+	if (base_length == 10)
+	{
+		if (data->flags[' '])
+			buffer[0] = ' ';
+		if (data->flags['+'])
+			buffer[0] = '+';
+		if (nbr.sign)
+			buffer[0] = '-';
+		if (buffer[0])
+			return (1);
+		return(0);
+	}
+	if(!data->flags['#'] || nbr.n == 0)
 		return (0);
+	buffer[0] = '0';
 	if (base_length == 8)
-	{
-		buffer[0] = '0';
 		return (1);
-	}
-	if (base_length == 16 && base[15] == 'f')
-	{
-		buffer[0] = '0';
-		buffer[1] = 'x';
-		return (2);
-	}
-	if (base_length == 16 && base[15] == 'F')
-	{
-		buffer[0] = '0';
+	buffer[1] = 'x';
+	if (base[15] == 'F')
 		buffer[1] = 'X';
-		return (2);
-	}
-	return (0);
+	return (2);
 }
 
 int	add_nbr(t_vector *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 {
 	char	nbr_str[20];
-	char	prefix[3];
 	int		nbr_length;
+	char	prefix[3];
 	int		full_nbr_length;
-	char	char_sign;
 
+	full_nbr_length = add_prefix(prefix, data, base, nbr);
 	nbr_length = sbase(nbr.n, base, nbr_str);
-	char_sign = get_sign(data, nbr.sign);
-	full_nbr_length = nbr_length + add_prefix(prefix, data, base, nbr);
-	if (char_sign)
-		full_nbr_length++;
-	if (data->precision > full_nbr_length)
-		full_nbr_length = data->precision;
+	nbr_str[nbr_length] = '\0';
+	full_nbr_length += nbr_length;
+	if (data->precision > nbr_length)
+		full_nbr_length = data->precision + ft_strlen(prefix);
 	if (data->precision != -1)
 		data->flags['0'] = 0;
 	if (!data->flags['-'] && !data->flags['0'])
 		ft_vector_pad_back(buffer, ' ', data->width - full_nbr_length);
-		//add_width(buffer, data, full_nbr_length);
-	if (char_sign)
-		ft_vector_push_back(buffer, &char_sign, 1);
 	ft_vector_push_back(buffer, prefix, ft_strlen(prefix));
 	if (!data->flags['-'] && data->flags['0'])
 		ft_vector_pad_back(buffer, '0', data->width - full_nbr_length);
-		//add_width(buffer, data, full_nbr_length);
 	if (data->precision != -1)
 		ft_vector_pad_back(buffer, '0', data->precision - nbr_length);
-		//add_precision(buffer, data, nbr_length);
 	if (data->precision != 0 || nbr.n != 0)
 		ft_vector_push_back(buffer, nbr_str, nbr_length);
 	if (data->flags['-'])
 		ft_vector_pad_back(buffer, ' ', data->width - full_nbr_length);
-		//add_width(buffer, data, full_nbr_length);
 	return (0);
 }

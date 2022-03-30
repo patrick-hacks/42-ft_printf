@@ -38,7 +38,7 @@ _bin :
 	mkdir _bin
 
 _bin/%.o : %.c libft/libft.a | _bin
-	$(CC) -c $(CFLAGSS) $(INCFLAG) $< -o $@
+	$(CC) -c $(CFLAGSS) $(INCFLAG) -Llibft/ -lft $< -o $@
 
 clean:
 	@rm -f $(OBJ)

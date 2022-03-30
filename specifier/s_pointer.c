@@ -27,7 +27,7 @@ int	s_pointer(t_vector *buffer, t_subspecifiers *data, va_list args)
 	data->flags['+'] = 0;
 	data->flags[' '] = 0;
 	data->flags['#'] = 1;
-	nbr.n = get_with_length_unsigned(data->flags, args);
+	nbr.n = va_arg(args, size_t);
 	// if (nbr.n == 0)
 	// {
 	// 	ft_vector_push_back(buffer, "(nil)", 5);

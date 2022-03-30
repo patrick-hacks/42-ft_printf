@@ -21,6 +21,20 @@
 
 #include "ft_printf.h"
 
+void	test(char format[20])
+{
+	int		return_val;
+	char	test[30] = {0};
+
+	strcpy(test, format);
+	printf("-----------\n");
+	fflush(stdout);
+	write(1, test, strlen(test));
+	write(1, "\n", 1);
+	return_val = ft_printf(test);
+	printf("\nreturn: %d\n", return_val);
+}
+
 void	test_p(char format[20], void *c)
 {
 	int		return_val;
@@ -214,15 +228,23 @@ int	main()
 
 	// POINTER
 
-	int p;
-	test_with_modifiers("-", "", (void *)&p, test_p);
-	test_with_modifiers("-", "0", (void *)0, test_p);
-	test_with_modifiers("-", "10", (void *)0, test_p);
-	test_with_modifiers("-", "20", (void *)&p, test_p);
+	void *p = (void *)0x55c8335596ed;
+	test_with_modifiers("-", "", p, test_p);
+	test_with_modifiers("-", "20", p, test_p);
 
-	size_t	i = 0;
-	while (i < 300)
-		test_c("", (void *)i++);
+	//size_t	i = 1;
+	//while (i < 300)
+	//	test_c("", (void *)i++);
+
+	test("");
+	test("42");
+	test("psekfsoegspogmpgmrdgmdprg");
+	test("%%");
+	fflush(stdout);
+	ft_printf("%d\n", 123);
+	ft_printf("%dasdi\n", 123);
+	ft_printf("42%deasy\n", 123);
+
 
 }
 

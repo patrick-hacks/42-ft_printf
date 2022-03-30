@@ -34,7 +34,7 @@ static int	process_format(t_vector *buffer, const char *format, va_list args)
 	it += process_width(it, args, &data);
 	it += process_precision(it, args, &data);
 	it += process_length(it, &data);
-	if (call_specifier_function(*it, buffer, &data, args))
+	if (call_specifier_function(*it, buffer, &data, args) < 0)
 	{
 		// handle error
 		return (1);

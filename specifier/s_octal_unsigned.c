@@ -27,6 +27,10 @@ int	s_octal_unsigned(t_vector *buffer, t_subspecifiers *data, va_list args)
 	data->flags['+'] = 0;
 	data->flags[' '] = 0;
 	nbr.n = get_with_length_unsigned(data->flags, args);
+	if (data->flags['#'] && data->precision != -1 && nbr.n != 0)
+		data->precision--;
+	if (data->flags['#'] && data->precision == 0 && nbr.n == 0)
+		data->precision++;
 	nbr.sign = 0;
 	return (add_nbr(buffer, data, "01234567", nbr));
 }
