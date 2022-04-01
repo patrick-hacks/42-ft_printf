@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   btest.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 23:16:43 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 13:08:31 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/01 12:38:54 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,23 @@
 #include <unistd.h>
 
 #include "ft_printf.h"
+
+void	test_f(char format[20], void *f)
+{
+	int		return_val;
+	char	test[30] = {0};
+	double	d = *(double *)f;
+
+	test[0] = '%';
+	strcpy(test + 1, format);
+	strcat(test, "f");
+	printf("-----------\n");
+	fflush(stdout);
+	write(1, test, strlen(test));
+	write(1, "\n", 1);
+	return_val = ft_printf(test, d);
+	printf("\nreturn: %d\n", return_val);
+}
 
 void	test_p(char format[20], void *c)
 {
@@ -211,6 +228,17 @@ int	main()
 	test_with_modifiers("-", "10", (void *)'a', test_c);
 	test_with_modifiers("-", "10.2", (void *)'a', test_c);
 	test_with_modifiers("-", "2.10", (void *)'a', test_c);
+
+	// FLOAT
+
+	double d = 5.3631231719770400306821758852E154;
+	test_with_modifiers("-+ 0#", "", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".10", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "10", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "10.2", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.10", (void *)&d, test_f);
 
 	// POINTER
 
