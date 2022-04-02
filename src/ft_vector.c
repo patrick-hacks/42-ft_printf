@@ -44,6 +44,8 @@ int	ft_vector_set_data_size(t_vector *vector, int data_size)
 
 int	ft_vector_push_back(t_vector *vector, const void *data, int size)
 {
+	if (size < 0)
+		return (0);
 	if (vector->data_size - vector->size - size < 0)
 	{
 		if (ft_vector_set_data_size(vector, 100 + vector->size + size))

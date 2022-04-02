@@ -19,11 +19,13 @@ typedef struct s_double_data {
 	int			sign;
 	int			exp;
 	uint64_t	mantissa;
-	uint64_t	digits[20];
-	char		str[310];
-	int			decimals;
+	uint64_t	digits[30];
+	char		str[400];
+	int			fractions;
+	int			whole_digits;
+	int			fraction_digits;
 }	t_double_data;
 
-void	set_double_data(t_double_data *data, double n);
+void	set_float_data(t_double_data *data, double n);
 
 #endif // SPECIFIER_HELPER_FLOAT_H

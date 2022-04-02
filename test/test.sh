@@ -11,6 +11,7 @@ gcc $FLAGS $FILES $INCLUDE $LIB -D EXPECTED -o expected
 gcc $FLAGS $FILES $INCLUDE $LIB -o test
 ./test > got.txt
 diff -u -U6 expected.txt got.txt > result.diff
+diff -u expected.txt got.txt | grep '^-[^-]' > wrong.diff
 if [ -s result.diff ]; then
 	echo "ERROR:"
 	wc -l < result.diff

@@ -28,9 +28,10 @@ char				get_sign(t_subspecifiers *data, int sign);
 int					add_nbr(t_vector *buffer, t_subspecifiers *data,
 						char *base, t_nbr nbr);
 int					add_float(t_vector *buffer, t_subspecifiers *subs, double n);
-double get_double_with_length(uint8_t *flags, va_list args);
+double get_float_with_length(uint8_t *flags, va_list args);
 
 int			sbase(unsigned long long nbr, char *base, char *output);
+int	sbase_float(unsigned long long nbr, char *base, char *output);
 unsigned long long	get_with_length_unsigned(uint8_t *flags, va_list args);
 unsigned long long	get_with_length_signed(uint8_t *flags, va_list args);
 

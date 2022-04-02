@@ -235,10 +235,31 @@ int	main()
 	test_with_modifiers("-+ 0#", "", (void *)&d, test_f);
 	test_with_modifiers("-+ 0#", "2.", (void *)&d, test_f);
 	test_with_modifiers("-+ 0#", ".", (void *)&d, test_f);
-	test_with_modifiers("-+ 0#", ".10", (void *)&d, test_f);
-	test_with_modifiers("-+ 0#", "10", (void *)&d, test_f);
-	test_with_modifiers("-+ 0#", "10.2", (void *)&d, test_f);
-	test_with_modifiers("-+ 0#", "2.10", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.2", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.200", (void *)&d, test_f);
+
+	d = -562950624509952;
+	test_with_modifiers("-+ 0#", "", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.2", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.200", (void *)&d, test_f);
+
+	d = 1.17549435082e-38;
+	test_with_modifiers("-+ 0#", "", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", ".200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.2", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "200.", (void *)&d, test_f);
+	test_with_modifiers("-+ 0#", "2.200", (void *)&d, test_f);
 
 	// POINTER
 
@@ -251,7 +272,7 @@ int	main()
 	//	test_c("", (void *)i++);
 
 	fflush(stdout);
-	ft_printf("");
+	ft_printf(" ");
 	ft_printf("42");
 	ft_printf("psekfsoegspogmpgmrdgmdprg");
 	ft_printf("%%");

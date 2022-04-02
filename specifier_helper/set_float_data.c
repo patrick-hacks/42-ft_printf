@@ -21,15 +21,15 @@ static void	get_double_digits(t_double_data *data, int offset, int factor)
 	int exp_i;
 
 	exp_i = data->exp;
-	ft_memset(data->digits, 0, 20 * 8);
+	ft_memset(data->digits, 0, 30 * 8);
 	(data->digits)[0] = data->mantissa;
 	while (exp_i != 0)
 	{
-		i = 19;
+		i = 29;
 		while (i >= 0)
 		{
 			(data->digits)[i] *= factor;
-			if ((data->digits)[i] >= 100000000000000000UL)
+			while ((data->digits)[i] >= 100000000000000000UL)
 			{
 				(data->digits)[i] -= 100000000000000000UL;
 				(data->digits)[i+1]++;
@@ -42,22 +42,36 @@ static void	get_double_digits(t_double_data *data, int offset, int factor)
 
 static void	get_double_string(t_double_data *data)
 {
-	int	i;
-	int	str_it;
+	int			i;
+	int			j;
+	uint64_t	n;
+	char		*str_it;
 
-	i = 19;
-	str_it = 0;
+	i = 29;
+	str_it = data->str;
+	//ft_memset(str_it, '0', sizeof(data->str));
+	while (!data->digits[i] && (i >= 0))
+		i--;
+	str_it += sbase(data->digits[i], "0123456789", str_it);
+	i--;
 	while (i >= 0)
 	{
-		if (data->digits[i])
-			str_it += sbase(data->digits[i], "0123456789", (data->str) + str_it);
+		n = data->digits[i];
+		j = 16;
+		while (j >= 0)
+		{
+			str_it[j] = (n % 10) + '0';
+			n /= 10;
+			j--;
+		}
+		str_it += 17;
 		i--;
 	}
-	//TODO ADD DECIMAL HERE
-	(data->str)[str_it] = '\0';
+
+	str_it = '\0';
 }
 
-void	set_double_data(t_double_data *data, double n)
+void	set_float_data(t_double_data *data, double n)
 {
 	long long		temp;
 	int				offset;
@@ -66,7 +80,8 @@ void	set_double_data(t_double_data *data, double n)
 	temp = *(long long *)&n;
 	data->sign = (temp >> 63) & 0x1;
 	data->exp = ((temp >> 52) & 0x7FF) - 1075;
-	data->mantissa = (temp & 	0xfffffffffffff) + 0x10000000000000;
+	data->mantissa = (temp & 0xfffffffffffff) + 0x10000000000000;
+	data->fractions = -data->exp;
 	offset = -1;
 	factor = 2;
 	if (data->exp < 0)
@@ -76,4 +91,10 @@ void	set_double_data(t_double_data *data, double n)
 	}
 	get_double_digits(data, offset, factor);
 	get_double_string(data);
+	if (data->exp > 0)
+		data->fractions = 0;
+	data->fraction_digits = data->fractions;
+	if (data->fraction_digits > (int)ft_strlen(data->str))
+		data->fraction_digits = (int)ft_strlen(data->str);
+	data->whole_digits = ft_strlen(data->str) - data->fraction_digits;
 }

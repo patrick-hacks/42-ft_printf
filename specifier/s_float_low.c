@@ -13,6 +13,7 @@
 #include "specifier_functions.h"
 
 #include <stdarg.h>
+#include <math.h>
 
 #include "ft_vector.h"
 #include "subspecifier.h"
@@ -21,11 +22,15 @@
 int	s_float_low(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
 	double	nbr;
-	nbr = get_double_with_length(data->flags, args);
+
+	if (data->precision == -1)
+		data->precision = 6;
+	nbr = get_float_with_length(data->flags, args);
+
 	return (add_float(buffer, data, nbr));
-	//ft_vector_push_back(buffer, "error:", 5);
+
 	(void) buffer;
 	(void) data;
 	(void) args;
-	return (1);
+	return (0);
 }
