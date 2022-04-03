@@ -2,3 +2,5 @@ _bin
 libft/*.o
 libft/libft.a
 test/*.txt
+test/*.diff
+test/test
