@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/03 11:02:20 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 13:37:53 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,11 @@ int	ft_vprintf(const char *format, va_list args)
 	t_vector	buffer;
 
 	ft_vector_init(&buffer, 100);
-	it = format;
-	while (*it != '\0')
+	while (*format != '\0')
 	{
-		if (*it != '%')
+		if (*format != '%')
 		{
+			it = format;
 			while (*it != '%' && *it != '\0')
 				it++;
 			if (ft_vector_push_back(&buffer, format, it - format))
@@ -58,14 +58,14 @@ int	ft_vprintf(const char *format, va_list args)
 				ft_vector_free(&buffer);
 				return (-1);
 			}
+			format = it;
 		}
 		else
 		{
-			it += process_format(&buffer, it + 1, args) + 1;
+			format += process_format(&buffer, format + 1, args) + 1;
 		}
 	}
-	if (write(1, buffer.data, buffer.size) != buffer.size)
-		return (-1);
+	write(1, buffer.data, buffer.size);
 	return (buffer.size);
 }
 

@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 23:16:43 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/01 12:38:54 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 13:36:33 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -267,18 +267,17 @@ int	main()
 	test_with_modifiers("-", "", p, test_p);
 	test_with_modifiers("-", "20", p, test_p);
 
-	//size_t	i = 1;
-	//while (i < 300)
-	//	test_c("", (void *)i++);
+	size_t	i = 1;
+	while (i < 300)
+		test_c("", (void *)i++);
 
 	fflush(stdout);
 	ft_printf(" ");
-	ft_printf("42");
-	ft_printf("psekfsoegspogmpgmrdgmdprg");
-	ft_printf("%%");
-	ft_printf("%d\n", 123);
-	ft_printf("%dasdi\n", 123);
-	ft_printf("42%deasy\n", 123);
+	ft_printf("42\n");
+	ft_printf("psekfsoegspogmpgmrdgmdprg\n");
+	ft_printf("a signle percent: '%%'\n");
+	ft_printf("Numbers 123: '%d'\n", 123);
+	ft_printf("12%d45%d7\n", 3 ,6);
 
 
 }

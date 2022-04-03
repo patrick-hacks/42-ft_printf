@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 19:14:32 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/03 11:54:55 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 12:01:43 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ typedef struct s_printed_lengths
 	int	full;
 }	t_printed_lengths;
 
-int	calc_lengths(t_printed_lengths *lengths, t_double_data *data,
-	int frac_left, t_subspecifiers *subs)
+void	calc_lengths(t_printed_lengths *lengths, t_double_data *data,
+	int *frac_left, t_subspecifiers *subs)
 {
 	lengths->nbr_digits_before = data->whole_digits;
 	if (subs->precision | (subs->flags)['#'])
@@ -78,15 +78,15 @@ int	calc_lengths(t_printed_lengths *lengths, t_double_data *data,
 		lengths->zero_between = data->fractions - (int)ft_strlen(data->str);
 	if (lengths->zero_between > subs->precision)
 		lengths->zero_between = subs->precision;
-	frac_left = subs->precision - lengths->zero_between;
-	if (frac_left < 0)
-		frac_left = 0;
-	if (frac_left <= data->fraction_digits)
-		lengths->nbr_digits_after = frac_left;
-	if (frac_left > data->fraction_digits)
+	*frac_left = subs->precision - lengths->zero_between;
+	if (*frac_left < 0)
+		*frac_left = 0;
+	if (*frac_left <= data->fraction_digits)
+		lengths->nbr_digits_after = *frac_left;
+	if (*frac_left > data->fraction_digits)
 	{
 		lengths->nbr_digits_after = data->fraction_digits;
-		lengths->zero_after = frac_left - data->fraction_digits;
+		lengths->zero_after = *frac_left - data->fraction_digits;
 	}
 	if (lengths->nbr_digits_before < 0)
 	{
@@ -99,7 +99,7 @@ int	calc_lengths(t_printed_lengths *lengths, t_double_data *data,
 }
 
 void	add_float_2(t_vector *buffer, t_printed_lengths *lengths,
-		t_double_data *data, int fractions)
+		t_double_data *data, char *fractions)
 {
 	ft_vector_pad_back(buffer, '0', lengths->zero_before);
 	ft_vector_push_back(buffer, data->str, lengths->nbr_digits_before);
@@ -120,7 +120,7 @@ int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 	set_float_data(&data, n);
 	ft_memset(&lengths, 0, sizeof(t_printed_lengths));
 	lengths.prefix = add_float_prefix(prefix, subs, n);
-	calc_lengths(&lengths, &data, fractions_left, subs);
+	calc_lengths(&lengths, &data, &fractions_left, subs);
 	fractions = data.str + data.whole_digits;
 	if (fractions < data.str)
 		fractions = data.str;
