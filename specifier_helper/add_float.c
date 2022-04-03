@@ -16,6 +16,7 @@
 #include <stddef.h>
 #include <stdarg.h>
 #include <math.h>
+#include <string.h>
 
 #include "libft.h"
 #include "ft_vector.h"
@@ -33,6 +34,16 @@ static int	add_float_prefix(char *buffer, t_subspecifiers *subs, double n)
 		buffer[0] = '+';
 	if (n < 0)
 		buffer[0] = '-';
+	if (n < 1 && n > -1 && buffer[0])
+	{
+		buffer[1] = '0';
+		return (2);
+	}
+	if (n < 1 && n > -1 && !buffer[0])
+	{
+		buffer[0] = '0';
+		return (1);
+	}
 	if (buffer[0])
 		return (1);
 	return(0);
@@ -75,8 +86,8 @@ int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 	lengths.nbr_digits_before = data.whole_digits;
 	if (subs->precision | (subs->flags)['#'])
 		lengths.dot = 1;
-	if (lengths.nbr_digits_before <= 0)
-		lengths.zero_between = -lengths.nbr_digits_before;
+	if (data.whole_digits <= 0)
+		lengths.zero_between = data.fractions - (int)ft_strlen(data.str);
 	if (lengths.zero_between > subs->precision)
 		lengths.zero_between = subs->precision;
 	fractions_left = subs->precision - lengths.zero_between;
@@ -100,15 +111,16 @@ int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 
 	lengths.full = lengths.prefix + lengths.zero_before + lengths.nbr_digits_before + lengths.dot + lengths.zero_between + lengths.nbr_digits_after + lengths.zero_after;
 
-	printf("\npre: %d\n", lengths.prefix);
-	printf("zero: %d\n", lengths.zero_before);
-	printf("n: %d\n", lengths.nbr_digits_before);
-	printf("dot: %d   ", lengths.dot);
-	printf("zero:%d \n", lengths.zero_between);
-	printf("n: %d\n", lengths.nbr_digits_after);
-	printf("%s\n\n", data.str);
-	printf("whole: %d\n", data.whole_digits);
-	printf("frac: %d\n", data.fractions);
+	// printf("\npre: %d,  ", lengths.prefix);
+	// printf("zero: %d,  ", lengths.zero_before);
+	// printf("n: %d,  ", lengths.nbr_digits_before);
+	// printf("dot: %d,  ", lengths.dot);
+	// printf("zero:%d,  ", lengths.zero_between);
+	// printf("n: %d\n", lengths.nbr_digits_after);
+	// printf("%s\n\n", data.str);
+	// printf("whole: %d\n", data.whole_digits);
+	// printf("frac: %d\n", data.fractions);
+	// printf("length: %ld\n", ft_strlen(data.str));
 
 	if (!subs->flags['-'] && !subs->flags['0'])
 		ft_vector_pad_back(buffer, ' ', subs->width - lengths.full);
