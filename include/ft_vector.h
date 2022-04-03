@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_vector.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 13:31:33 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 01:41:14 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 10:52:11 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef VECTOR_H
-# define VECTOR_H
+#ifndef FT_VECTOR_H
+# define FT_VECTOR_H
 
 typedef struct s_vector {
 	void	*data;

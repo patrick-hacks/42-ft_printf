@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   flags.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 22:10:05 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 09:06:42 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:04:17 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	set_flag(char flag, t_subspecifiers *data)
 	int	i;
 
 	i = 0;
-	while (i < (int)sizeof(FLAG_CHARS))
+	while (i < (int) sizeof(FLAG_CHARS))
 	{
 		if (flag == FLAG_CHARS[i])
 		{

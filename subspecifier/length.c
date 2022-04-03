@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   length.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 00:26:04 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 04:36:46 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:03:08 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	set_length(unsigned char c, t_subspecifiers *data)
 	int	i;
 
 	i = 0;
-	while (i < (int)sizeof(LENGTH_CHARS))
+	while (i < (int) sizeof(LENGTH_CHARS))
 	{
 		if (c == LENGTH_CHARS[i])
 		{

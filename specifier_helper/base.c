@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sbase.c                                            :+:      :+:    :+:   */
+/*   base.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 05:18:56 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:57:49 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:01:51 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,5 @@ int	sbase(unsigned long long nbr, char *base, char *output)
 		output[0] = base[0];
 		return (1);
 	}
-	return(recursive_base(nbr, ft_strlen(base), base, output));
+	return (recursive_base(nbr, ft_strlen(base), base, output));
 }

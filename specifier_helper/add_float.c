@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 19:14:32 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/01 12:25:11 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:27:44 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,17 +35,15 @@ static int	add_float_prefix(char *buffer, t_subspecifiers *subs, double n)
 		buffer[0] = '-';
 	if (buffer[0])
 		return (1);
-	return(0);
+	return (0);
 }
 
-double get_float_with_length(uint8_t *flags, va_list args)
+double	get_float_with_length(uint8_t *flags, va_list args)
 {
 	if (flags['L'] == 1)
 		return ((long double)va_arg(args, long double));
 	return ((double)va_arg(args, double));
 }
-
-#include <stdio.h>
 
 typedef struct s_printed_lengths
 {
@@ -58,7 +56,6 @@ typedef struct s_printed_lengths
 	int	zero_after;
 	int	full;
 }	t_printed_lengths;
-
 
 int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 {
@@ -100,15 +97,15 @@ int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 
 	lengths.full = lengths.prefix + lengths.zero_before + lengths.nbr_digits_before + lengths.dot + lengths.zero_between + lengths.nbr_digits_after + lengths.zero_after;
 
-	printf("\npre: %d\n", lengths.prefix);
-	printf("zero: %d\n", lengths.zero_before);
-	printf("n: %d\n", lengths.nbr_digits_before);
-	printf("dot: %d   ", lengths.dot);
-	printf("zero:%d \n", lengths.zero_between);
-	printf("n: %d\n", lengths.nbr_digits_after);
-	printf("%s\n\n", data.str);
-	printf("whole: %d\n", data.whole_digits);
-	printf("frac: %d\n", data.fractions);
+	// printf("\npre: %d\n", lengths.prefix);
+	// printf("zero: %d\n", lengths.zero_before);
+	// printf("n: %d\n", lengths.nbr_digits_before);
+	// printf("dot: %d   ", lengths.dot);
+	// printf("zero:%d \n", lengths.zero_between);
+	// printf("n: %d\n", lengths.nbr_digits_after);
+	// printf("%s\n\n", data.str);
+	// printf("whole: %d\n", data.whole_digits);
+	// printf("frac: %d\n", data.fractions);
 
 	if (!subs->flags['-'] && !subs->flags['0'])
 		ft_vector_pad_back(buffer, ' ', subs->width - lengths.full);
@@ -125,21 +122,4 @@ int	add_float(t_vector *buffer, t_subspecifiers *subs, double n)
 		ft_vector_pad_back(buffer, ' ', subs->width - lengths.full);
 	return (0);
 
-
-	// if (data->precision > nbr_length - )
-	// 	full_nbr_length = data->precision + ft_strlen(prefix);
-	// if (data->precision != -1)
-	// 	data->flags['0'] = 0;
-	// if (!data->flags['-'] && !data->flags['0'])
-	// 	ft_vector_pad_back(buffer, ' ', data->width - full_nbr_length);
-	// ft_vector_push_back(buffer, prefix, ft_strlen(prefix));
-	// if (!data->flags['-'] && data->flags['0'])
-	// 	ft_vector_pad_back(buffer, '0', data->width - full_nbr_length);
-	// if (data->precision != -1)
-	// 	ft_vector_pad_back(buffer, '0', data->precision - nbr_length);
-	// if (data->precision != 0 || nbr.n != 0)
-	// 	ft_vector_push_back(buffer, nbr_str, nbr_length);
-	// if (data->flags['-'])
-	// 	ft_vector_pad_back(buffer, ' ', data->width - full_nbr_length);
-	// return (0);
 }

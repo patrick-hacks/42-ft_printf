@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 08:53:54 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:02:20 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 
 #include <stdio.h>
 
-
 static int	process_format(t_vector *buffer, const char *format, va_list args)
 {
 	t_subspecifiers	data;
@@ -36,7 +35,6 @@ static int	process_format(t_vector *buffer, const char *format, va_list args)
 	it += process_length(it, &data);
 	if (call_specifier_function(*it, buffer, &data, args) < 0)
 	{
-		// handle error
 		return (1);
 	}
 	return ((int)(it + 1 - format));

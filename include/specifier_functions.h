@@ -3,48 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   specifier_functions.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/28 03:39:46 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 10:51:29 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/04/03 11:20:45 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/04/03 11:32:37 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SPECIFIER_FUNCTIONS_H
 # define SPECIFIER_FUNCTIONS_H
 
-#include <stdarg.h>
-#include <stdint.h>
+# include <stdarg.h>
+# include <stdint.h>
 
-typedef struct s_vector t_vector;
-typedef struct s_subspecifiers t_subspecifiers;
+typedef struct s_vector				t_vector;
+typedef struct s_subspecifiers		t_subspecifiers;
 
-// FUNCTIONS
-# define SPEC_F_ARGS t_vector *buffer, t_subspecifiers *data, va_list args
-typedef int (*t_specifier_function)(SPEC_F_ARGS);
+typedef int							(*t_specifier_function)(t_vector *buffer,
+		t_subspecifiers *data, va_list args);
 
-int	s_percent(SPEC_F_ARGS);
-int	s_error(SPEC_F_ARGS);
-int	s_integer_signed(SPEC_F_ARGS);
-int	s_integer_unsigned(SPEC_F_ARGS);
-int	s_octal_unsigned(SPEC_F_ARGS);
-int	s_hexa_unsigned_low(SPEC_F_ARGS);
-int	s_hexa_unsigned_up(SPEC_F_ARGS);
-int	s_float_low(SPEC_F_ARGS);
-int	s_float_up(SPEC_F_ARGS);
-int	s_float_scient_low(SPEC_F_ARGS);
-int	s_float_scient_up(SPEC_F_ARGS);
-int	s_float_short_low(SPEC_F_ARGS);
-int	s_float_short_up(SPEC_F_ARGS);
-int	s_float_hexa_low(SPEC_F_ARGS);
-int	s_float_hexa_up(SPEC_F_ARGS);
-int	s_char(SPEC_F_ARGS);
-int	s_string(SPEC_F_ARGS);
-int	s_pointer(SPEC_F_ARGS);
-int	s_store(SPEC_F_ARGS);
-
-# undef SPEC_F_ARGS
-// =======
+int	s_percent(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_error(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_integer_signed(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_integer_unsigned(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_octal_unsigned(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_hexa_unsigned_low(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_hexa_unsigned_up(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_low(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_up(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_scient_low(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_scient_up(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_short_low(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_short_up(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_hexa_low(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_float_hexa_up(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_char(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_string(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_pointer(t_vector *buffer, t_subspecifiers *data, va_list args);
+int	s_store(t_vector *buffer, t_subspecifiers *data, va_list args);
 
 enum e_test {
 	e_error = 0,
@@ -68,7 +64,7 @@ enum e_test {
 	e_percent = 18
 };
 
-static const t_specifier_function	specifier_functions[] = {
+static const t_specifier_function	g_specifier_functions[] = {
 	s_error,				// 0
 	s_integer_signed,		// 1
 	s_integer_unsigned,		// 2
@@ -89,8 +85,7 @@ static const t_specifier_function	specifier_functions[] = {
 	s_store					// 17
 };
 
-static const int8_t spec_function_id[] =
-{
+static const int8_t					g_spec_function_id[] = {
 	0,						// @ //
 	e_float_hexa_up,		// A //
 	0,						// B //
@@ -127,11 +122,11 @@ static const int8_t spec_function_id[] =
 	e_float_hexa_low,		// a //
 	0,						// b //
 	e_char,					// c //
-	e_integer_signed, 		// d //
+	e_integer_signed,		// d //
 	e_float_scient_low,		// e //
 	e_float_low,			// f //
 	e_float_short_low,		// g //
-	e_error, 				// h // USED FOR LENGTH
+	e_error,				// h // USED FOR LENGTH
 	e_integer_signed,		// i //
 	e_error,				// j // USED FOR LENGTH
 	0,						// k //

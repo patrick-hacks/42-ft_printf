@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 04:56:24 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/30 20:08:17 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:01:44 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 #include "ft_vector.h"
 #include "subspecifier.h"
 
-unsigned long long get_with_length_unsigned(uint8_t *flags, va_list args)
+unsigned long long	get_with_length_unsigned(uint8_t *flags, va_list args)
 {
 	if (flags['h'] == 2)
 		return ((unsigned char)va_arg(args, unsigned int));
@@ -39,7 +39,7 @@ unsigned long long get_with_length_unsigned(uint8_t *flags, va_list args)
 	return ((unsigned int)va_arg(args, unsigned int));
 }
 
-unsigned long long get_with_length_signed(uint8_t *flags, va_list args)
+unsigned long long	get_with_length_signed(uint8_t *flags, va_list args)
 {
 	if (flags['h'] == 2)
 		return ((char)va_arg(args, int));
@@ -74,9 +74,9 @@ int	add_prefix(char *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 			buffer[0] = '-';
 		if (buffer[0])
 			return (1);
-		return(0);
+		return (0);
 	}
-	if(!data->flags['#'] || nbr.n == 0)
+	if (!data->flags['#'] || nbr.n == 0)
 		return (0);
 	buffer[0] = '0';
 	if (base_length == 8)

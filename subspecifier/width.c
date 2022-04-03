@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   width.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 23:45:08 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 04:31:49 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:03:19 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	process_width(const char *format, va_list args, t_subspecifiers *data)
 	if (*format == '*')
 	{
 		data->width = va_arg(args, int);
-		return(1);
+		return (1);
 	}
 	data->width = ft_atoi(format);
 	i = 0;

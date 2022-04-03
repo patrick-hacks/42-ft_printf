@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   s_error.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/28 06:59:01 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 10:59:23 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 
 int	s_error(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
-	//ft_vector_push_back(buffer, "error:", 5);
 	(void) buffer;
 	(void) data;
 	(void) args;

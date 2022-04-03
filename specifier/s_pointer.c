@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   s_pointer.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 11:01:46 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 11:00:21 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,6 @@ int	s_pointer(t_vector *buffer, t_subspecifiers *data, va_list args)
 	data->flags[' '] = 0;
 	data->flags['#'] = 1;
 	nbr.n = va_arg(args, size_t);
-	// if (nbr.n == 0)
-	// {
-	// 	ft_vector_push_back(buffer, "(nil)", 5);
-	// 	return (5);
-	// }
 	nbr.sign = 0;
 	return (add_nbr(buffer, data, "0123456789abcdef", nbr));
 }

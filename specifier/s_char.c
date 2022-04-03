@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   s_char.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 13:08:09 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/03 10:59:18 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,6 @@
 #include "subspecifier.h"
 #include "libft.h"
 
-// static int	add_wchar(t_vector *buffer, wint_t	c)
-// {
-// 	if (c & 0b)
-// 	{
-
-// 	}
-// }
-
 int	s_char(t_vector *buffer, t_subspecifiers *data, va_list args)
 {
 	unsigned int	c;
@@ -39,14 +31,4 @@ int	s_char(t_vector *buffer, t_subspecifiers *data, va_list args)
 	if (data->flags['-'])
 		ft_vector_pad_back(buffer, ' ', data->width - 1);
 	return (0);
-
-	// c = (char)va_arg(args, int);
-	// // if (data->precision == 0)
-	// // 	str_len = 0;
-	// if (!data->flags['-'])
-	// 	ft_vector_pad_back(buffer, ' ', data->width - str_len);
-	// ft_vector_push_back(buffer, &c, str_len);
-	// if (data->flags['-'])
-	// 	ft_vector_pad_back(buffer, ' ', data->width - str_len);
-	// return (0);
 }
