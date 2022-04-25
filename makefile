@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+         #
+#    By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/26 13:56:06 by pfuchs            #+#    #+#              #
-#    Updated: 2022/03/28 04:29:45 by pfuchs           ###   ########.fr        #
+#    Updated: 2022/04/25 18:51:35 by pfuchs           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 MAKEFLAGS += --no-builtin-rules
 MAKEFLAGS += --no-builtin-variables
 
-VPATH = src subspecifier specifier specifier_helper
+VPATH = src subspecifier specifier
 
 # Compiler Variables
 CC		= cc
@@ -23,8 +23,14 @@ INCFLAG	= -I include -I libft
 AR		= ar
 ARFLAGS = -rcs
 # File Variables
-NAME	= libft_printf.a
-SRC		= $(wildcard src/*.c) $(wildcard specifier/*.c) $(wildcard subspecifier/*.c) $(wildcard specifier_helper/*.c)
+NAME	= libftprintf.a
+SPECIFIERN	= char error float_hexa_up float_hexa_low float_low float_scient_low\
+			float_scient_up float_short_low float_short_up float_up\
+			hexa_unsigned_low hexa_unsigned_up integer_signed integer_unsigned\
+			octal_unsigned percent pointer store string
+SRCN		= specifier add_float add_nbr base set_float_data flags init length\
+			precision width ft_vector ft_printf
+SRC		= $(addsuffix .c,$(addprefix s_,$(SPECIFIERN)) $(SRCN))
 OBJ		= $(addprefix _bin/,$(notdir $(SRC:.c=.o)))
 
 $(NAME): $(OBJ) | libft/libft.a
@@ -49,5 +55,7 @@ fclean:	clean
 re:		fclean all
 
 all:	$(NAME)
+
+bonus:	$(NAME)
 
 .PHONY: clean fclean re all

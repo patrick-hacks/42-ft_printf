@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/09 17:54:58 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 20:16:55 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/09 18:10:48 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/31 21:55:19 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h" // t_list
+#include "libft.h" // t_list
 
-// Adds "new_node" at the beginning of the list
-void	ft_lstadd_front(t_list **lst, t_list *new_node)
+#include <stdlib.h> // free
+
+// Calls function "del" on the content of "alst" and free the link
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	new_node->next = *lst;
-	*lst = new_node;
+	if (!lst)
+		return ;
+	del(lst->content);
+	free(lst);
 }

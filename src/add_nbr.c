@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 04:56:24 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/03 11:01:44 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/25 19:15:31 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,13 @@ int	add_prefix(char *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 	return (2);
 }
 
+static void	fix_length(t_subspecifiers *data, t_nbr nbr, int *len, char *nbr_s)
+{
+	if (data->precision == 0 && nbr.n == 0)
+		*len = 0;
+	nbr_s[*len] = '\0';
+}
+
 int	add_nbr(t_vector *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 {
 	char	nbr_str[20];
@@ -96,7 +103,7 @@ int	add_nbr(t_vector *buffer, t_subspecifiers *data, char *base, t_nbr nbr)
 
 	full_nbr_length = add_prefix(prefix, data, base, nbr);
 	nbr_length = sbase(nbr.n, base, nbr_str);
-	nbr_str[nbr_length] = '\0';
+	fix_length(data, nbr, &nbr_length, nbr_str);
 	full_nbr_length += nbr_length;
 	if (data->precision > nbr_length)
 		full_nbr_length = data->precision + ft_strlen(prefix);

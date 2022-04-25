@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 17:30:32 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 20:16:47 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/22 17:28:17 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/31 21:55:44 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h" // t_list ft_lstlast
+#include "libft.h" // t_list
 
-// Adds "new_node" at the end of the list
-void	ft_lstadd_back(t_list **lst, t_list *new_node)
+// Returns the number of nodes
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*last;
+	t_list	*it;
+	int		count;
 
-	if (!*lst)
+	if (!lst)
+		return (0);
+	count = 1;
+	it = lst;
+	while (it->next)
 	{
-		*lst = new_node;
-		return ;
+		it = it->next;
+		count++;
 	}
-	last = ft_lstlast(*lst);
-	last->next = new_node;
+	return (count);
 }

@@ -6,7 +6,7 @@
 /*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 22:56:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/04/03 13:37:53 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/25 19:15:39 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,11 +61,10 @@ int	ft_vprintf(const char *format, va_list args)
 			format = it;
 		}
 		else
-		{
 			format += process_format(&buffer, format + 1, args) + 1;
-		}
 	}
 	write(1, buffer.data, buffer.size);
+	ft_vector_free(&buffer);
 	return (buffer.size);
 }
 

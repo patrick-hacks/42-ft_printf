@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 08:47:26 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 16:45:29 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/11 09:58:12 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 #include <stdlib.h> // malloc
 #include <stddef.h> // NULL size_t
+#include <limits.h> // SIZE_T_MAX
 
 // Allocates memory for "num" items with "size", initialises to 0
 void	*ft_calloc(size_t num, size_t size)
 {
 	char	*memory;
 
+	if (size && num > SIZE_T_MAX / size)
+		return (NULL);
 	memory = (char *)malloc(num * size);
 	if (!memory)
 		return (NULL);

@@ -3,7 +3,7 @@
 FLAGS="-Wall -Werror -Wextra -g"
 FILES="btest.c"
 INCLUDE="-I ../include -I ../vector"
-LIB="-L .. -l ft_printf"
+LIB="-L .. -l ftprintf"
 
 (cd .. && make)
 gcc $FLAGS $FILES $INCLUDE $LIB -D EXPECTED -o expected

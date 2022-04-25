@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/09 18:35:13 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 20:18:23 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/03/31 23:04:41 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h" // t_list ft_lstnew
+#include "libft.h" // t_list ft_lstnew
 
 #include <stddef.h> // NULL size_t
 
@@ -21,8 +21,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list_it;
 	t_list	*new_node;
 
-	if (!lst)
-		return (NULL);
 	new_list = ft_lstnew(NULL);
 	new_list->content = f(lst->content);
 	new_list_it = new_list;

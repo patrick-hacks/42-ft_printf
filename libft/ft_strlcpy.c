@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/22 13:24:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 22:00:50 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/01 00:45:49 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h" // ft_strlen
+#include "libft.h" // ft_strlen ft_memcpy
 
 #include <stddef.h> // NULL size_t
 

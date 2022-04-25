@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   s_string.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/27 03:34:34 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 12:27:09 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/25 18:42:22 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	s_string(t_vector *buffer, t_subspecifiers *data, va_list args)
 	int		str_len;
 
 	str = va_arg(args, char *);
+	if (str == NULL)
+		str = "(null)";
 	str_len = ft_strlen(str);
 	if (data->precision != -1)
 	{

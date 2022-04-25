@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/22 17:28:17 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/22 20:19:03 by pfuchs           ###   ########.fr       */
+/*   Created: 2022/03/09 17:54:58 by pfuchs            #+#    #+#             */
+/*   Updated: 2022/03/31 21:55:09 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h" // t_list
+#include "libft.h" // t_list
 
-// Returns the number of nodes
-int	ft_lstsize(t_list *lst)
+// Adds "new_node" at the beginning of the list
+void	ft_lstadd_front(t_list **lst, t_list *new_node)
 {
-	t_list	*it;
-	int		count;
-
-	if (!lst)
-		return (0);
-	count = 1;
-	it = lst;
-	while (it->next)
-	{
-		it = it->next;
-		count++;
-	}
-	return (count);
+	new_node->next = *lst;
+	*lst = new_node;
 }

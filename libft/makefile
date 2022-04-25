@@ -3,16 +3,12 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+         #
+#    By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 02:09:09 by pfuchs            #+#    #+#              #
-#    Updated: 2022/03/26 15:30:32 by pfuchs           ###   ########.fr        #
+#    Updated: 2022/04/09 17:27:48 by pfuchs           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-# Disable built-in rules and variables
-MAKEFLAGS += --no-builtin-rules
-MAKEFLAGS += --no-builtin-variables
 
 # Compiler Variables
 CC		= cc
@@ -29,7 +25,7 @@ MAIN	= isalpha isdigit isalnum isascii isprint strlen memset bzero memcpy\
 BONUS	= lstnew lstadd_front lstsize lstlast lstadd_back lstdelone lstclear\
 		lstiter lstmap
 MAINFILES	= $(addprefix ft_,$(addsuffix .c, $(MAIN)))
-BONUSFILES	= $(addprefix ft_,$(addsuffix _bonus.c, $(BONUS)))
+BONUSFILES	= $(addprefix ft_,$(addsuffix .c, $(BONUS)))
 MAINOBJ	= $(MAINFILES:.c=.o)
 BONUSOBJ = $(BONUSFILES:.c=.o)
 

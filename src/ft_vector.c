@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_vector.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 13:27:01 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/29 09:34:38 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/25 17:40:21 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,4 @@ void	ft_vector_free(t_vector *vector)
 	free(vector->data);
 	vector->data = NULL;
 	vector->data_size = 0;
-	vector->size = 0;
 }

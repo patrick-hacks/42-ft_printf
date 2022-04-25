@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pfuchs <pfuchs@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: pfuchs <pfuchs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 12:22:40 by pfuchs            #+#    #+#             */
-/*   Updated: 2022/03/27 04:39:34 by pfuchs           ###   ########.fr       */
+/*   Updated: 2022/04/09 17:26:08 by pfuchs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static int	count_splits(const char *str, const char *delims)
 // Creates a split at the location of split
 // Returns the length of the split created
 // Returns -1 if allocation fails
-int	create_split(const char *str, const char *delims, char **split)
+static int	create_split(const char *str, const char *delims, char **split)
 {
 	int			length;
 	const char	*it1;
